@@ -1,0 +1,29 @@
+.menu-button0 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.menu-button1 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    background-color: red;
+    border-radius: 25px;
+}
+
+.menu-button2 {
+    font-family: "Times New Roman", Times, serif;
+    background-color: blue;
+    border-radius: 25px;
+}
+
+.menu-button3 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: green;
+    border-radius: 25px;
+}
+
+.menu-button4 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    background-color: pink;
+    border-radius: 25px;
+}
