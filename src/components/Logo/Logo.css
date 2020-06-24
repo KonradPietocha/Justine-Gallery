@@ -1,0 +1,92 @@
+.logo-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    cursor: pointer;
+}
+
+.logo-header h1 {
+    display: flex;
+    margin: 0;
+}
+
+.title1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+.title2 {
+    animation-duration: 3s;
+    animation-name: slidein2;
+}
+
+.logo-letter0 {
+    font-family: Georgia, serif;
+    color: white;
+}
+
+.logo-letter1 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: red;
+}
+
+.logo-letter2 {
+    font-family: "Times New Roman", Times, serif;
+    color: blue;
+}
+
+.logo-letter3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+}
+
+.logo-letter4 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: pink;
+}
+
+.logo-letter5 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: violet;
+}
+
+.logo-letter6 {
+    font-family: Impact, Charcoal, sans-serif;
+    color: red;
+}
+
+.logo-letter7 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: green;
+}
+
+.logo-letter8 {
+    font-family: Tahoma, Geneva, sans-serif;
+    color: white;
+}
+
+.logo-letter9 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: blue;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 70%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes slidein2 {
+    from {
+        margin-right: 70%;
+    }
+    to {
+        margin-right: 0%;
+    }
+}

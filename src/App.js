@@ -1,14 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+//components
+import Logo from './components/Logo/Logo.js';
+import Menu from './components/Menu/Menu.js';
+//style
 import './App.css';
 
 function App() {
+  //state*********************************
+  const [state, setState] = useState({
+    menuOpen: false
+  });
+  //functions*****************************
+  const handleClickLogo = open => {
+    setState(state => ({ ...state, menuOpen: open }));
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Galeria Justyśki</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+      <Logo
+        handleClickLogo={handleClickLogo}
+        state={state}
+      />
+      <Menu
+        state={state}
+      />
     </div>
   );
 }
