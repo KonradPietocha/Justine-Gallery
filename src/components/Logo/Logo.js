@@ -1,6 +1,7 @@
 import React from 'react';
 //component
 import Title from '../Title/Title.js';
+import LogoImg from '../LogoImg/LogoImg.js';
 //style
 import './Logo.css';
 
@@ -30,6 +31,7 @@ function Logo(props) {
               position={2}
             />
           </h1>
+          <LogoImg />
         </header>
       }
     </>
