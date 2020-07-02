@@ -17,11 +17,13 @@
 .title1 {
     animation-duration: 3s;
     animation-name: slidein;
+    text-shadow: 0px 10px 10px #234D3C;
 }
 
 .title2 {
     animation-duration: 3s;
     animation-name: slidein2;
+    text-shadow: 0px 10px 10px #234D3C;
 }
 
 @keyframes slidein {

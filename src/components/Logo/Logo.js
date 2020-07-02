@@ -7,7 +7,7 @@ import './Logo.css';
 
 function Logo(props) {
   //props***************************************
-  const { state, handleClickLogo } = props;
+  const { menuOpen, handleClickLogo } = props;
   //variables***********************************
   let title = ["Galeria", "Justyśki"];
   let title1 = title[0].split("");
@@ -15,9 +15,9 @@ function Logo(props) {
 
   return (
     <>
-      {state.menuOpen ? null :
+      {menuOpen ? null :
         <header className="logo-header"
-          onClick={() => handleClickLogo(true)}
+          onClick={handleClickLogo}
         >
           <h1 className="title1">
             <Title

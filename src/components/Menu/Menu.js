@@ -6,13 +6,13 @@ import './Menu.css';
 
 function Menu(props) {
     //props***************************************
-    const { state } = props;
+    const { menuOpen } = props;
     //variables***********************************
     let menuArray = ["Galeria", "Slider", "O mnie", "Kontakt"];
 
     return (
         <>
-            {state.menuOpen ?
+            {menuOpen ?
                 <nav className="menu-nav">
                     <MenuList
                         list={menuArray}
