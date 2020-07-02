@@ -8,11 +8,12 @@ function MenuButton(props) {
 
     return (
         <>
-            <button
-                className={`menu-button${number}`}
+            <div
+                className="button"
+                id={`button-${number}`}
             >
                 {item}
-            </button>
+            </div>
         </>
     );
 }

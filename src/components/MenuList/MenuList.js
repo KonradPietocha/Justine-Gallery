@@ -10,18 +10,18 @@ function MenuList(props) {
 
     return (
         <>
-            <ul className="menu-list">
+            <div className="menu-list">
                 {list.map((item, key) => (
-                    <li
+                    <div
                         key={key}
                     >
                         <MenuButton
                             item={item}
                             number={key}
                         />
-                    </li>
+                    </div>
                 ))}
-            </ul>
+            </div>
         </>
     );
 }

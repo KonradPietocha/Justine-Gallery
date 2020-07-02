@@ -1,9 +1,5 @@
 .menu-list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-}
-
-.menu-list li {
-    list-style-type: none;
+    justify-content: space-between;
 }
