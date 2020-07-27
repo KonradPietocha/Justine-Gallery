@@ -1,11 +1,12 @@
 import React from 'react';
-import barrack from '../../images/barrack.jpg';
 
-function Images({ image }) {
+function Images(props) {
+    //props***************************************
+    const { image } = props;
 
     return (
         <div>
-            <img src={image} width="50px" height="50px" />
+            <img src={image} alt={image} width="200px" height="200px" />
         </div>
     )
 };

@@ -1,23 +1,31 @@
 import React from 'react';
 //component
 import MenuList from '../MenuList/MenuList.js';
+import Gallery from '../Gallery/Gallery.js';
 //style
 import './Menu.css';
 
 function Menu(props) {
     //props***************************************
-    const { menuOpen } = props;
+    const { menuOpen, menuSwitch } = props;
     //variables***********************************
-    let menuArray = ["Galeria", "Slider", "O mnie", "Kontakt"];
-
+    const menuArray = ["Galeria", "Slider", "O mnie", "Kontakt"];
+    
     return (
         <>
             {menuOpen ?
-                <nav className="menu-nav">
-                    <MenuList
-                        list={menuArray}
-                    />
-                </nav>
+                <div>
+                    <nav className="menu-nav">
+                        <MenuList
+                            list={menuArray}
+                        />
+                    </nav>
+                    <section>
+                        {menuSwitch === "gallery" ?
+                            <Gallery />
+                        : null}
+                    </section>
+                </div>
                 : null}
         </>
     );

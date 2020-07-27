@@ -7,16 +7,17 @@ import './Main.css';
 
 function Main(props) {
   //props***************************************
-  const { menuOpen, openMenu } = props;
+  const { menuOpen, menuSwitch, openMenuAction } = props;
 
   return (
     <div className="Main">
       <Logo
-        handleClickLogo={openMenu}
+        handleClickLogo={openMenuAction}
         menuOpen={menuOpen}
       />
       <Menu
         menuOpen={menuOpen}
+        menuSwitch={menuSwitch}
       />
     </div>
   );
