@@ -7,7 +7,15 @@ import './Main.css';
 
 function Main(props) {
   //props***************************************
-  const { menuOpen, menuSwitch, openMenuAction } = props;
+  const {
+    menuOpen,
+    menuSwitch,
+    openMenuAction,
+    openGalleryAction,
+    sliderOpenAction,
+    aboutOpenAction,
+    contactOpenAction
+  } = props;
 
   return (
     <div className="Main">
@@ -18,6 +26,10 @@ function Main(props) {
       <Menu
         menuOpen={menuOpen}
         menuSwitch={menuSwitch}
+        openGalleryAction={openGalleryAction}
+        sliderOpenAction={sliderOpenAction}
+        aboutOpenAction={aboutOpenAction}
+        contactOpenAction={contactOpenAction}
       />
     </div>
   );

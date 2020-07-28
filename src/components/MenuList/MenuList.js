@@ -6,7 +6,13 @@ import './MenuList.css';
 
 function MenuList(props) {
     //props***************************************
-    const { list } = props;
+    const {
+        list,
+        openGalleryAction,
+        sliderOpenAction,
+        aboutOpenAction,
+        contactOpenAction
+    } = props;
 
     return (
         <>
@@ -18,6 +24,10 @@ function MenuList(props) {
                         <MenuButton
                             item={item}
                             number={key}
+                            openGalleryAction={openGalleryAction}
+                            sliderOpenAction={sliderOpenAction}
+                            aboutOpenAction={aboutOpenAction}
+                            contactOpenAction={contactOpenAction}
                         />
                     </div>
                 ))}
