@@ -13,6 +13,10 @@ function Logo(props) {
   let title1 = title[0].split("");
   let title2 = title[1].split("");
 
+  setTimeout(() => {
+    handleClickLogo();
+  }, 5000);
+
   return (
     <>
       {menuOpen ? null :

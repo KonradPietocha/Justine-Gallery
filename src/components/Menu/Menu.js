@@ -17,7 +17,7 @@ function Menu(props) {
         contactOpenAction
     } = props;
     //variables***********************************
-    const menuArray = ["Galeria", "Slider", "O mnie", "Kontakt"];
+    const menuArray = ["Galeria", "Slajdy", "O mnie", "Kontakt"];
 
     return (
         <>
@@ -25,6 +25,7 @@ function Menu(props) {
                 <div>
                     <nav className="menu-nav">
                         <MenuList
+                            menuSwitch={menuSwitch}
                             list={menuArray}
                             openGalleryAction={openGalleryAction}
                             sliderOpenAction={sliderOpenAction}
@@ -33,10 +34,10 @@ function Menu(props) {
                         />
                     </nav>
                     <section>
-                        {menuSwitch === "gallery" ?
+                        {menuSwitch === "Galeria" ?
                             <Gallery />
                             : null}
-                        {menuSwitch === "about" ?
+                        {menuSwitch === "O mnie" ?
                             <AboutMe />
                             : null}
                     </section>

@@ -8,6 +8,7 @@ function MenuList(props) {
     //props***************************************
     const {
         list,
+        menuSwitch,
         openGalleryAction,
         sliderOpenAction,
         aboutOpenAction,
@@ -20,6 +21,11 @@ function MenuList(props) {
                 {list.map((item, key) => (
                     <div
                         key={key}
+                        style={
+                            menuSwitch === item ?
+                                { paddingTop: "10px" }
+                                : null
+                        }
                     >
                         <MenuButton
                             item={item}

@@ -1,16 +1,16 @@
 const menuSwitch = (state, action) => {
     if (state === undefined) {
-        return { content: "gallery" };
+        return { content: "Galeria" };
     }
     switch (action.type) {
         case "galleryOpen":
-            return { content: "gallery" };
+            return { content: "Galeria" };
         case "sliderOpen":
-            return { content: "slider" };
+            return { content: "Slajdy" };
         case "aboutOpen":
-            return { content: "about" };
+            return { content: "O mnie" };
         case "contactOpen":
-            return { content: "contact" };
+            return { content: "Kontakt" };
         default:
             return state;
     }
