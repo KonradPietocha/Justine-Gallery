@@ -11,6 +11,7 @@ function Menu(props) {
     const {
         menuOpen,
         menuSwitch,
+        mobileSwitch,
         openGalleryAction,
         sliderOpenAction,
         aboutOpenAction,
@@ -26,6 +27,7 @@ function Menu(props) {
                     <nav className="menu-nav">
                         <MenuList
                             menuSwitch={menuSwitch}
+                            mobileSwitch={mobileSwitch}
                             list={menuArray}
                             openGalleryAction={openGalleryAction}
                             sliderOpenAction={sliderOpenAction}

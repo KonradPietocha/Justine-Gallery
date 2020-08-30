@@ -5,9 +5,10 @@ import Main from './view/Main';
 const mapStateToProps = state => {
     return {
       menuOpen: state.menuOpener.menu,
-      menuSwitch: state.menuSwitch.content
+      menuSwitch: state.menuSwitch.content,
+      mobileSwitch: state.mobileSwitch.mobile
     };
-}
+};
 
 //actions
 const actions = {
@@ -16,7 +17,9 @@ const actions = {
     openGallery: { type: "galleryOpen" },
     sliderOpen: { type: "sliderOpen" },
     aboutOpen: { type: "aboutOpen" },
-    contactOpen: { type: "contactOpen" }
+    contactOpen: { type: "contactOpen" },
+    makeMobile: { type: "small" },
+    makeWide: { type: "wide" }
 };
 
 const mapDispatchToProps = dispatch => {
@@ -38,6 +41,12 @@ const mapDispatchToProps = dispatch => {
         },
         contactOpenAction: function () {
             return dispatch(actions.contactOpen);
+        },
+        makeMobileAction: function () {
+            return dispatch(actions.makeMobile);
+        },
+        makeWideAction: function () {
+            return dispatch(actions.makeWide);
         }
     };
 }

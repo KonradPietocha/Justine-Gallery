@@ -9,6 +9,7 @@ function MenuList(props) {
     const {
         list,
         menuSwitch,
+        mobileSwitch,
         openGalleryAction,
         sliderOpenAction,
         aboutOpenAction,
@@ -17,27 +18,33 @@ function MenuList(props) {
 
     return (
         <>
-            <div className="menu-list">
-                {list.map((item, key) => (
-                    <div
-                        key={key}
-                        style={
-                            menuSwitch === item ?
-                                { paddingTop: "10px" }
-                                : null
-                        }
-                    >
-                        <MenuButton
-                            item={item}
-                            number={key}
-                            openGalleryAction={openGalleryAction}
-                            sliderOpenAction={sliderOpenAction}
-                            aboutOpenAction={aboutOpenAction}
-                            contactOpenAction={contactOpenAction}
-                        />
-                    </div>
-                ))}
-            </div>
+            {mobileSwitch ?
+                <div>
+                    MENU
+                </div>
+                :
+                <div className="menu-list">
+                    {list.map((item, key) => (
+                        <div
+                            key={key}
+                            style={
+                                menuSwitch === item ?
+                                    { paddingTop: "10px" }
+                                    : null
+                            }
+                        >
+                            <MenuButton
+                                item={item}
+                                number={key}
+                                openGalleryAction={openGalleryAction}
+                                sliderOpenAction={sliderOpenAction}
+                                aboutOpenAction={aboutOpenAction}
+                                contactOpenAction={contactOpenAction}
+                            />
+                        </div>
+                    ))}
+                </div>
+            }
         </>
     );
 }

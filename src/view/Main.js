@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 //components
 import Logo from '../components/Logo/Logo';
 import Menu from '../components/Menu/Menu';
@@ -10,12 +10,25 @@ function Main(props) {
   const {
     menuOpen,
     menuSwitch,
+    mobileSwitch,
     openMenuAction,
     openGalleryAction,
     sliderOpenAction,
     aboutOpenAction,
-    contactOpenAction
+    contactOpenAction,
+    makeMobileAction,
+    makeWideAction
   } = props;
+
+  useLayoutEffect(() => {
+    function updateSize() {
+      if (window.innerWidth < 750) makeMobileAction();
+      if (window.innerWidth > 750) makeWideAction();
+    }
+    window.addEventListener('resize', updateSize);
+    updateSize();
+    return () => window.removeEventListener('resize', updateSize);
+  });
 
   return (
     <div className="Main">
@@ -26,6 +39,7 @@ function Main(props) {
       <Menu
         menuOpen={menuOpen}
         menuSwitch={menuSwitch}
+        mobileSwitch={mobileSwitch}
         openGalleryAction={openGalleryAction}
         sliderOpenAction={sliderOpenAction}
         aboutOpenAction={aboutOpenAction}
