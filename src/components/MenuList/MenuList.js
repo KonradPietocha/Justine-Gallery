@@ -19,8 +19,9 @@ function MenuList(props) {
     return (
         <>
             {mobileSwitch ?
-                <div>
-                    MENU
+                <div className='mobile-menu'>
+                    <div className='mobile-menu1' />
+                    <div className='mobile-menu2' />
                 </div>
                 :
                 <div className="menu-list">

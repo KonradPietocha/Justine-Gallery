@@ -3,3 +3,24 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.mobile-menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobile-menu1 {
+    border-top: 4px solid red;
+    border-bottom: 2px solid red;
+    width: 40px;
+    height: 5px;
+}
+
+.mobile-menu2 {
+    border-top: 2px solid red;
+    border-bottom: 4px solid red;
+    width: 40px;
+    height: 5px;
+}
