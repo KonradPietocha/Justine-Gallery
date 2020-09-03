@@ -11,13 +11,16 @@ function Main(props) {
     menuOpen,
     menuSwitch,
     mobileSwitch,
+    dehazer,
     openMenuAction,
     openGalleryAction,
     sliderOpenAction,
     aboutOpenAction,
     contactOpenAction,
     makeMobileAction,
-    makeWideAction
+    makeWideAction,
+    dehazeAction,
+    hazeAction
   } = props;
 
   useLayoutEffect(() => {
@@ -37,6 +40,7 @@ function Main(props) {
         menuOpen={menuOpen}
       />
       <Menu
+        dehazer={dehazer}
         menuOpen={menuOpen}
         menuSwitch={menuSwitch}
         mobileSwitch={mobileSwitch}
@@ -44,6 +48,8 @@ function Main(props) {
         sliderOpenAction={sliderOpenAction}
         aboutOpenAction={aboutOpenAction}
         contactOpenAction={contactOpenAction}
+        dehazeAction={dehazeAction}
+        hazeAction={hazeAction}
       />
     </div>
   );

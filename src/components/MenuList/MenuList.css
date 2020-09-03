@@ -4,6 +4,11 @@
     justify-content: space-between;
 }
 
+.mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+}
+
 .mobile-menu {
     cursor: pointer;
     display: flex;
@@ -11,14 +16,14 @@
     justify-content: center;
 }
 
-.mobile-menu1 {
+.dehaze-menu1 {
     border-top: 4px solid red;
     border-bottom: 2px solid red;
     width: 40px;
     height: 5px;
 }
 
-.mobile-menu2 {
+.dehaze-menu2 {
     border-top: 2px solid red;
     border-bottom: 4px solid red;
     width: 40px;

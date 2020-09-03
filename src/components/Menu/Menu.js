@@ -3,19 +3,24 @@ import React from 'react';
 import MenuList from '../MenuList/MenuList.js';
 import Gallery from '../Gallery/Gallery.js';
 import AboutMe from '../AboutMe/AboutMe.js';
+//functions
+import { menuHazer } from '../../functions/menuHazer.js';
 //style
 import './Menu.css';
 
 function Menu(props) {
     //props***************************************
     const {
+        dehazer,
         menuOpen,
         menuSwitch,
         mobileSwitch,
         openGalleryAction,
         sliderOpenAction,
         aboutOpenAction,
-        contactOpenAction
+        contactOpenAction,
+        dehazeAction,
+        hazeAction
     } = props;
     //variables***********************************
     const menuArray = ["Galeria", "Slajdy", "O mnie", "Kontakt"];
@@ -23,9 +28,10 @@ function Menu(props) {
     return (
         <>
             {menuOpen ?
-                <div>
+                <div onClick={() => menuHazer(dehazer, hazeAction)}>
                     <nav className="menu-nav">
                         <MenuList
+                            dehazer={dehazer}
                             menuSwitch={menuSwitch}
                             mobileSwitch={mobileSwitch}
                             list={menuArray}
@@ -33,6 +39,7 @@ function Menu(props) {
                             sliderOpenAction={sliderOpenAction}
                             aboutOpenAction={aboutOpenAction}
                             contactOpenAction={contactOpenAction}
+                            dehazeAction={dehazeAction}
                         />
                     </nav>
                     <section>

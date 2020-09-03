@@ -6,7 +6,8 @@ const mapStateToProps = state => {
     return {
       menuOpen: state.menuOpener.menu,
       menuSwitch: state.menuSwitch.content,
-      mobileSwitch: state.mobileSwitch.mobile
+      mobileSwitch: state.mobileSwitch.mobile,
+      dehazer: state.dehazer.menu
     };
 };
 
@@ -19,7 +20,9 @@ const actions = {
     aboutOpen: { type: "aboutOpen" },
     contactOpen: { type: "contactOpen" },
     makeMobile: { type: "small" },
-    makeWide: { type: "wide" }
+    makeWide: { type: "wide" },
+    dehaze: { type: "dehaze" },
+    haze: { type: "haze" }
 };
 
 const mapDispatchToProps = dispatch => {
@@ -47,6 +50,12 @@ const mapDispatchToProps = dispatch => {
         },
         makeWideAction: function () {
             return dispatch(actions.makeWide);
+        },
+        dehazeAction: function () {
+            return dispatch(actions.dehaze);
+        },
+        hazeAction: function () {
+            return dispatch(actions.haze);
         }
     };
 }
