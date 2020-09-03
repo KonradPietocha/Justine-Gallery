@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "41079f87c79e9f8d730a419d406efb4b",
+    "revision": "19e83b4bd1855af9620b15ed33171cbf",
     "url": "/Justine-Gallery/index.html"
   },
   {
-    "revision": "d7b13e77769a2812d4dd",
-    "url": "/Justine-Gallery/static/css/main.9625f796.chunk.css"
+    "revision": "39d757236b007671dd0a",
+    "url": "/Justine-Gallery/static/css/main.4e6090af.chunk.css"
   },
   {
     "revision": "b26c491f90e29df8c33b",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Justine-Gallery/static/js/2.079a2962.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d7b13e77769a2812d4dd",
-    "url": "/Justine-Gallery/static/js/main.34b4f6f1.chunk.js"
+    "revision": "39d757236b007671dd0a",
+    "url": "/Justine-Gallery/static/js/main.49d331d7.chunk.js"
   },
   {
     "revision": "bf4b0e9f2d18892c8033",
