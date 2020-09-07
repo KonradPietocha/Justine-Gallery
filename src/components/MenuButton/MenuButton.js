@@ -6,13 +6,13 @@ import { switchMenu } from '../../functions/switchMenu.js';
 
 function MenuButton(props) {
     //props***************************************
-    const { number, item } = props;
+    const { number, item, menuSwitch } = props;
 
     return (
         <>
             <div
                 className="button"
-                id={`button-${number}`}
+                id={menuSwitch === item ? `selected-${number}` : `button-${number}`}
                 onClick={switchMenu(props)}
             >
                 {item}

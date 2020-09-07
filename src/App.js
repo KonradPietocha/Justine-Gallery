@@ -7,8 +7,7 @@ const mapStateToProps = state => {
         menuOpen: state.menuOpener.menu,
         menuSwitch: state.menuSwitch.content,
         mobileSwitch: state.mobileSwitch.mobile,
-        dehazer: state.dehazer.menu,
-        //arrIndex: state.indexer.index
+        dehazer: state.dehazer.menu
     };
 };
 
@@ -23,13 +22,7 @@ const actions = {
     makeMobile: { type: "small" },
     makeWide: { type: "wide" },
     dehaze: { type: "dehaze" },
-    haze: { type: "haze" },
-    // prevIndex: function (arrLength) {
-    //     return { type: "decrease", arrLength: arrLength };
-    // },
-    // nextIndex: function (arrLength) {
-    //     return { type: "increase", arrLength: arrLength };
-    // }
+    haze: { type: "haze" }
 };
 
 const mapDispatchToProps = dispatch => {
@@ -63,13 +56,7 @@ const mapDispatchToProps = dispatch => {
         },
         hazeAction: function () {
             return dispatch(actions.haze);
-        },
-        // prevIndexAction: function () {
-        //     return dispatch(actions.prevIndex);;
-        // },
-        // nextIndexAction: function () {
-        //     return dispatch(actions.nextIndex);;
-        // }
+        }
     };
 }
 

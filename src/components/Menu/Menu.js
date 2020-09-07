@@ -6,6 +6,7 @@ import AboutMe from '../AboutMe/AboutMe.js';
 import Slider from '../Slider/Slider';
 //functions
 import { menuHazer } from '../../functions/menuHazer.js';
+import { slidePictures } from '../../functions/slide';
 //images
 import { pictures } from '../../url/picturesUrl';
 //style
@@ -14,7 +15,6 @@ import './Menu.css';
 function Menu(props) {
     //props***************************************
     const {
-        //arrIndex,
         dehazer,
         menuOpen,
         menuSwitch,
@@ -24,26 +24,13 @@ function Menu(props) {
         aboutOpenAction,
         contactOpenAction,
         dehazeAction,
-        hazeAction,
-        //prevIndexAction,
-        //nextIndexAction
+        hazeAction
     } = props;
     //variables***********************************
     const menuArray = ["Galeria", "Slajdy", "O mnie", "Kontakt"];
     const lastImage = pictures.length - 1;
     //state
     const [picturesIndex, setPicturesIndex] = useState(0);
-    //functions
-    const prevImage = () => {
-        setPicturesIndex(
-            picturesIndex === 0 ? lastImage : picturesIndex - 1
-        );
-    };
-    const nextImage = () => {
-        setPicturesIndex(
-            picturesIndex === lastImage ? 0 : picturesIndex + 1
-        );
-    };
 
     return (
         <>
@@ -67,11 +54,25 @@ function Menu(props) {
                             <Gallery />
                             : null}
                         {menuSwitch === "Slajdy" ?
-                            <Slider 
+                            <Slider
                                 pictures={pictures}
                                 picturesIndex={picturesIndex}
-                                prevImage={prevImage}
-                                nextImage={nextImage}
+                                prevImage={
+                                    () => slidePictures(
+                                        "prev",
+                                        lastImage,
+                                        picturesIndex,
+                                        setPicturesIndex
+                                    )
+                                }
+                                nextImage={
+                                    () => slidePictures(
+                                        "next",
+                                        lastImage,
+                                        picturesIndex,
+                                        setPicturesIndex
+                                    )
+                                }
                             />
                             : null}
                         {menuSwitch === "O mnie" ?

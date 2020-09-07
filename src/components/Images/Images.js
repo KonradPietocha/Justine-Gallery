@@ -6,7 +6,13 @@ function Images(props) {
 
     return (
         <div>
-            <img src={image} alt={image} width="200px" height="200px" />
+            <img
+                src={image}
+                alt={image.replace("/Justine-Gallery/static/media/", "").split(".")[0]}
+                width="200px"
+                height="200px"
+                onClick={() => console.log(image)}
+            />
         </div>
     )
 };

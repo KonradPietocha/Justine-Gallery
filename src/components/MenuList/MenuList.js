@@ -33,6 +33,7 @@ function MenuList(props) {
                                 <div key={key}>
                                     <MenuButton
                                         item={item}
+                                        menuSwitch={menuSwitch}
                                         number={key}
                                         openGalleryAction={openGalleryAction}
                                         sliderOpenAction={sliderOpenAction}
@@ -57,6 +58,7 @@ function MenuList(props) {
                         >
                             <MenuButton
                                 item={item}
+                                menuSwitch={menuSwitch}
                                 number={key}
                                 openGalleryAction={openGalleryAction}
                                 sliderOpenAction={sliderOpenAction}
