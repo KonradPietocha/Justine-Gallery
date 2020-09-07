@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Justine-Gallery/static/css/main.4e6090af.chunk.css",
-    "main.js": "/Justine-Gallery/static/js/main.49d331d7.chunk.js",
-    "main.js.map": "/Justine-Gallery/static/js/main.49d331d7.chunk.js.map",
+    "main.css": "/Justine-Gallery/static/css/main.052283c7.chunk.css",
+    "main.js": "/Justine-Gallery/static/js/main.a47cb3db.chunk.js",
+    "main.js.map": "/Justine-Gallery/static/js/main.a47cb3db.chunk.js.map",
     "runtime-main.js": "/Justine-Gallery/static/js/runtime-main.8285d542.js",
     "runtime-main.js.map": "/Justine-Gallery/static/js/runtime-main.8285d542.js.map",
-    "static/js/2.079a2962.chunk.js": "/Justine-Gallery/static/js/2.079a2962.chunk.js",
-    "static/js/2.079a2962.chunk.js.map": "/Justine-Gallery/static/js/2.079a2962.chunk.js.map",
+    "static/js/2.7334b93d.chunk.js": "/Justine-Gallery/static/js/2.7334b93d.chunk.js",
+    "static/js/2.7334b93d.chunk.js.map": "/Justine-Gallery/static/js/2.7334b93d.chunk.js.map",
     "index.html": "/Justine-Gallery/index.html",
-    "precache-manifest.33220cd9bdc1c8be0d0e0ab4c48a05d5.js": "/Justine-Gallery/precache-manifest.33220cd9bdc1c8be0d0e0ab4c48a05d5.js",
+    "precache-manifest.0727b2835e0fc625d5a1145a641d8294.js": "/Justine-Gallery/precache-manifest.0727b2835e0fc625d5a1145a641d8294.js",
     "service-worker.js": "/Justine-Gallery/service-worker.js",
-    "static/css/main.4e6090af.chunk.css.map": "/Justine-Gallery/static/css/main.4e6090af.chunk.css.map",
-    "static/js/2.079a2962.chunk.js.LICENSE.txt": "/Justine-Gallery/static/js/2.079a2962.chunk.js.LICENSE.txt",
+    "static/css/main.052283c7.chunk.css.map": "/Justine-Gallery/static/css/main.052283c7.chunk.css.map",
+    "static/js/2.7334b93d.chunk.js.LICENSE.txt": "/Justine-Gallery/static/js/2.7334b93d.chunk.js.LICENSE.txt",
     "static/media/Beta-Julia.jpg": "/Justine-Gallery/static/media/Beta-Julia.5e98a429.jpg",
     "static/media/Bienkowska.jpg": "/Justine-Gallery/static/media/Bienkowska.652fedbd.jpg",
     "static/media/CZERWONY-kAPTUREK1.jpg": "/Justine-Gallery/static/media/CZERWONY-kAPTUREK1.e4926afa.jpg",
@@ -71,8 +71,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8285d542.js",
-    "static/js/2.079a2962.chunk.js",
-    "static/css/main.4e6090af.chunk.css",
-    "static/js/main.49d331d7.chunk.js"
+    "static/js/2.7334b93d.chunk.js",
+    "static/css/main.052283c7.chunk.css",
+    "static/js/main.a47cb3db.chunk.js"
   ]
 }
