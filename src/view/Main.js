@@ -8,6 +8,7 @@ import './Main.css';
 function Main(props) {
   //props***************************************
   const {
+    indexer,
     menuOpen,
     menuSwitch,
     mobileSwitch,
@@ -19,8 +20,8 @@ function Main(props) {
     contactOpenAction,
     makeMobileAction,
     makeWideAction,
-    dehazeAction,
-    hazeAction
+    hazeAction,
+    changeIndexAction
   } = props;
 
   useLayoutEffect(() => {
@@ -40,6 +41,7 @@ function Main(props) {
         menuOpen={menuOpen}
       />
       <Menu
+        indexer={indexer}
         dehazer={dehazer}
         menuOpen={menuOpen}
         menuSwitch={menuSwitch}
@@ -48,8 +50,8 @@ function Main(props) {
         sliderOpenAction={sliderOpenAction}
         aboutOpenAction={aboutOpenAction}
         contactOpenAction={contactOpenAction}
-        dehazeAction={dehazeAction}
         hazeAction={hazeAction}
+        changeIndexAction={changeIndexAction}
       />
     </div>
   );

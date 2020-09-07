@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 //component
 import MenuList from '../MenuList/MenuList.js';
 import Gallery from '../Gallery/Gallery.js';
 import AboutMe from '../AboutMe/AboutMe.js';
 import Slider from '../Slider/Slider';
-//functions
-import { menuHazer } from '../../functions/menuHazer.js';
-import { slidePictures } from '../../functions/slide';
 //images
 import { pictures } from '../../url/picturesUrl';
 //style
@@ -15,6 +12,7 @@ import './Menu.css';
 function Menu(props) {
     //props***************************************
     const {
+        indexer,
         dehazer,
         menuOpen,
         menuSwitch,
@@ -23,19 +21,17 @@ function Menu(props) {
         sliderOpenAction,
         aboutOpenAction,
         contactOpenAction,
-        dehazeAction,
-        hazeAction
+        hazeAction,
+        changeIndexAction
     } = props;
     //variables***********************************
     const menuArray = ["Galeria", "Slajdy", "O mnie", "Kontakt"];
     const lastImage = pictures.length - 1;
-    //state
-    const [picturesIndex, setPicturesIndex] = useState(0);
 
     return (
         <>
             {menuOpen ?
-                <div onClick={() => menuHazer(dehazer, hazeAction)}>
+                <div onClick={() => dehazer ? hazeAction("haze") : null}>
                     <nav className="menu-nav">
                         <MenuList
                             dehazer={dehazer}
@@ -46,7 +42,7 @@ function Menu(props) {
                             sliderOpenAction={sliderOpenAction}
                             aboutOpenAction={aboutOpenAction}
                             contactOpenAction={contactOpenAction}
-                            dehazeAction={dehazeAction}
+                            hazeAction={hazeAction}
                         />
                     </nav>
                     <section>
@@ -56,23 +52,9 @@ function Menu(props) {
                         {menuSwitch === "Slajdy" ?
                             <Slider
                                 pictures={pictures}
-                                picturesIndex={picturesIndex}
-                                prevImage={
-                                    () => slidePictures(
-                                        "prev",
-                                        lastImage,
-                                        picturesIndex,
-                                        setPicturesIndex
-                                    )
-                                }
-                                nextImage={
-                                    () => slidePictures(
-                                        "next",
-                                        lastImage,
-                                        picturesIndex,
-                                        setPicturesIndex
-                                    )
-                                }
+                                picturesIndex={indexer}
+                                prevImage={() => changeIndexAction("prev", lastImage)}
+                                nextImage={() => changeIndexAction("next", lastImage)}
                             />
                             : null}
                         {menuSwitch === "O mnie" ?

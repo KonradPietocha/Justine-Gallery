@@ -15,7 +15,7 @@ function MenuList(props) {
         sliderOpenAction,
         aboutOpenAction,
         contactOpenAction,
-        dehazeAction
+        hazeAction
     } = props;
 
     return (
@@ -23,7 +23,7 @@ function MenuList(props) {
             {mobileSwitch ?
                 <div className='mobile-menu'>
                     {!dehazer ?
-                        <div onClick={() => dehazeAction()}>
+                        <div onClick={() => hazeAction("dehaze")}>
                             <div className='dehaze-menu1' />
                             <div className='dehaze-menu2' />
                         </div>
