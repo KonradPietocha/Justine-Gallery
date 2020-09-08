@@ -14,20 +14,16 @@ function Main(props) {
     mobileSwitch,
     dehazer,
     openMenuAction,
-    openGalleryAction,
-    sliderOpenAction,
-    aboutOpenAction,
-    contactOpenAction,
+    menuSwitchAction,
     makeMobileAction,
-    makeWideAction,
     hazeAction,
     changeIndexAction
   } = props;
 
   useLayoutEffect(() => {
     function updateSize() {
-      if (window.innerWidth < 750) makeMobileAction();
-      if (window.innerWidth > 750) makeWideAction();
+      if (window.innerWidth < 750) makeMobileAction("small");
+      if (window.innerWidth > 750) makeMobileAction("wide");
     }
     window.addEventListener('resize', updateSize);
     updateSize();
@@ -37,7 +33,7 @@ function Main(props) {
   return (
     <div className="Main">
       <Logo
-        handleClickLogo={openMenuAction}
+        handleClickLogo={() => openMenuAction("open")}
         menuOpen={menuOpen}
       />
       <Menu
@@ -46,10 +42,10 @@ function Main(props) {
         menuOpen={menuOpen}
         menuSwitch={menuSwitch}
         mobileSwitch={mobileSwitch}
-        openGalleryAction={openGalleryAction}
-        sliderOpenAction={sliderOpenAction}
-        aboutOpenAction={aboutOpenAction}
-        contactOpenAction={contactOpenAction}
+        openGalleryAction={() => menuSwitchAction("galleryOpen")}
+        sliderOpenAction={() => menuSwitchAction("sliderOpen")}
+        aboutOpenAction={() => menuSwitchAction("aboutOpen")}
+        contactOpenAction={() => menuSwitchAction("contactOpen")}
         hazeAction={hazeAction}
         changeIndexAction={changeIndexAction}
       />

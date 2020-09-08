@@ -13,42 +13,16 @@ const mapStateToProps = state => {
 };
 
 //actions
-const actions = {
-    closeMenu: { type: "close" },
-    openMenu: { type: "open" },
-    openGallery: { type: "galleryOpen" },
-    sliderOpen: { type: "sliderOpen" },
-    aboutOpen: { type: "aboutOpen" },
-    contactOpen: { type: "contactOpen" },
-    makeMobile: { type: "small" },
-    makeWide: { type: "wide" }
-};
-
 const mapDispatchToProps = dispatch => {
     return {
-        closeMenuAction: function () {
-            return dispatch(actions.closeMenu);
+        openMenuAction: action => {
+            return dispatch({ type: action });
         },
-        openMenuAction: function () {
-            return dispatch(actions.openMenu);
+        menuSwitchAction: action => {
+            return dispatch({ type: action });
         },
-        openGalleryAction: function () {
-            return dispatch(actions.openGallery);
-        },
-        sliderOpenAction: function () {
-            return dispatch(actions.sliderOpen);
-        },
-        aboutOpenAction: function () {
-            return dispatch(actions.aboutOpen);
-        },
-        contactOpenAction: function () {
-            return dispatch(actions.contactOpen);
-        },
-        makeMobileAction: function () {
-            return dispatch(actions.makeMobile);
-        },
-        makeWideAction: function () {
-            return dispatch(actions.makeWide);
+        makeMobileAction: action => {
+            return dispatch({ type: action });
         },
         hazeAction: action => {
             return dispatch({ type: action });
