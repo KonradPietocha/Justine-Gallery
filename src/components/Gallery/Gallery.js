@@ -1,18 +1,23 @@
 import React from 'react';
 //components
 import Images from '../Images/Images';
-//variables
-import { pictures } from '../../url/picturesUrl';
 //style
-import './Gallery.css';
+import './gallery.css';
 
-function Gallery() {
+function Gallery(props) {
+    //props***************************************
+    const { pictures, enlargeImageAction } = props;
+
     return (
         <div
             className="tiles"
         >
             {pictures.map((image, i) => (
-                <Images key={i} image={image} />
+                <Images
+                    key={i}
+                    image={image}
+                    enlargeImageAction={enlargeImageAction}
+                />
             ))}
         </div>
     );

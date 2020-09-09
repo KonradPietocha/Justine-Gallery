@@ -2,7 +2,7 @@ import React from 'react';
 //component
 import MenuButton from '../MenuButton/MenuButton.js';
 //style
-import './MenuList.css';
+import './menuList.css';
 
 function MenuList(props) {
     //props***************************************

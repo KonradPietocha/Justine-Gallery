@@ -8,7 +8,8 @@ const mapStateToProps = state => {
         menuSwitch: state.menuSwitch.content,
         mobileSwitch: state.mobileSwitch.mobile,
         dehazer: state.dehazer.menu,
-        indexer: state.indexer.index
+        indexer: state.indexer.index,
+        enlarger: state.enlarger.image
     };
 };
 
@@ -29,6 +30,9 @@ const mapDispatchToProps = dispatch => {
         },
         changeIndexAction: (action, lastInd) => {
             return dispatch({ type: action, last: lastInd });
+        },
+        enlargeImageAction: (action, url) => {
+            return dispatch({ type: action, url: url });
         }
     };
 }

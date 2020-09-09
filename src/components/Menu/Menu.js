@@ -4,14 +4,17 @@ import MenuList from '../MenuList/MenuList.js';
 import Gallery from '../Gallery/Gallery.js';
 import AboutMe from '../AboutMe/AboutMe.js';
 import Slider from '../Slider/Slider';
-//images
+import Contact from '../Contact/Contact';
+import EnlargedImage from '../EnlargedImage/EnlargedImage';
+//imagesUrl
 import { pictures } from '../../url/picturesUrl';
 //style
-import './Menu.css';
+import './menu.css';
 
 function Menu(props) {
     //props***************************************
     const {
+        enlarger,
         indexer,
         dehazer,
         menuOpen,
@@ -22,7 +25,8 @@ function Menu(props) {
         aboutOpenAction,
         contactOpenAction,
         hazeAction,
-        changeIndexAction
+        changeIndexAction,
+        enlargeImageAction
     } = props;
     //variables***********************************
     const menuArray = ["Galeria", "Slajdy", "O mnie", "Kontakt"];
@@ -47,7 +51,10 @@ function Menu(props) {
                     </nav>
                     <section>
                         {menuSwitch === "Galeria" ?
-                            <Gallery />
+                            <Gallery
+                                pictures={pictures}
+                                enlargeImageAction={enlargeImageAction}
+                            />
                             : null}
                         {menuSwitch === "Slajdy" ?
                             <Slider
@@ -60,9 +67,16 @@ function Menu(props) {
                         {menuSwitch === "O mnie" ?
                             <AboutMe />
                             : null}
+                        {menuSwitch === "Kontakt" ?
+                            <Contact />
+                            : null}
                     </section>
                 </div>
                 : null}
+            <EnlargedImage
+                enlarger={enlarger}
+                enlargeImageAction={enlargeImageAction}
+            />
         </>
     );
 }

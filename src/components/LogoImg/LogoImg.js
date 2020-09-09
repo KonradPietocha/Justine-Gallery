@@ -1,6 +1,6 @@
 import React from 'react';
 //style
-import './LogoImg.css';
+import './logoImg.css';
 
 function LogoImg() {
 

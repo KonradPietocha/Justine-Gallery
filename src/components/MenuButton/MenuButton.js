@@ -1,6 +1,6 @@
 import React from 'react';
 //style
-import './MenuButton.css';
+import './menuButton.css';
 //function
 import { switchMenu } from '../../functions/switchMenu.js';
 

@@ -3,11 +3,12 @@ import React, { useLayoutEffect } from 'react';
 import Logo from '../components/Logo/Logo';
 import Menu from '../components/Menu/Menu';
 //style
-import './Main.css';
+import './main.css';
 
 function Main(props) {
   //props***************************************
   const {
+    enlarger,
     indexer,
     menuOpen,
     menuSwitch,
@@ -17,7 +18,8 @@ function Main(props) {
     menuSwitchAction,
     makeMobileAction,
     hazeAction,
-    changeIndexAction
+    changeIndexAction,
+    enlargeImageAction
   } = props;
 
   useLayoutEffect(() => {
@@ -37,6 +39,7 @@ function Main(props) {
         menuOpen={menuOpen}
       />
       <Menu
+        enlarger={enlarger}
         indexer={indexer}
         dehazer={dehazer}
         menuOpen={menuOpen}
@@ -48,6 +51,7 @@ function Main(props) {
         contactOpenAction={() => menuSwitchAction("contactOpen")}
         hazeAction={hazeAction}
         changeIndexAction={changeIndexAction}
+        enlargeImageAction={enlargeImageAction}
       />
     </div>
   );

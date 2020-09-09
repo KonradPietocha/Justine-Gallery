@@ -3,7 +3,7 @@ import React from 'react';
 import Title from '../Title/Title.js';
 import LogoImg from '../LogoImg/LogoImg.js';
 //style
-import './Logo.css';
+import './logo.css';
 
 function Logo(props) {
   //props***************************************
