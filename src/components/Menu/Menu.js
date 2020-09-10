@@ -6,6 +6,7 @@ import AboutMe from '../AboutMe/AboutMe.js';
 import Slider from '../Slider/Slider';
 import Contact from '../Contact/Contact';
 import EnlargedImage from '../EnlargedImage/EnlargedImage';
+import Footer from '../Footer/Footer';
 //imagesUrl
 import { pictures } from '../../url/picturesUrl';
 //style
@@ -33,7 +34,7 @@ function Menu(props) {
     const lastImage = pictures.length - 1;
 
     return (
-        <>
+        <div className="menu">
             {menuOpen ?
                 <div onClick={() => dehazer ? hazeAction("haze") : null}>
                     <nav className="menu-nav">
@@ -77,7 +78,8 @@ function Menu(props) {
                 enlarger={enlarger}
                 enlargeImageAction={enlargeImageAction}
             />
-        </>
+            <Footer />
+        </div>
     );
 }
 

@@ -33,7 +33,7 @@ function Main(props) {
   });
 
   return (
-    <div className="Main">
+    <div className="main">
       <Logo
         handleClickLogo={() => openMenuAction("open")}
         menuOpen={menuOpen}

@@ -8,15 +8,7 @@ function Contact() {
         <>
             <div className='contact'>
                 <h1>Jeśli masz jakieś pytania, napisz:</h1>
-                <form>
-                    <label>Twój e-mail:<br />
-                        <input type="email" />
-                    </label><br />
-                    <label>Treść:<br />
-                        <textarea name="comment" id="" cols="30" rows="10" />
-                    </label><br />
-                    <input className='submit' type="submit" />
-                </form>
+                <p><a href="mailto:konkatynka@gmail.com">konkatynka@gmail.com</a></p>
             </div>
 
         </>
