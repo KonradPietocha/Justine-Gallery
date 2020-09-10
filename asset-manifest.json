@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Justine-Gallery/static/css/main.5cce96bc.chunk.css",
-    "main.js": "/Justine-Gallery/static/js/main.9cbfa491.chunk.js",
-    "main.js.map": "/Justine-Gallery/static/js/main.9cbfa491.chunk.js.map",
+    "main.css": "/Justine-Gallery/static/css/main.91cf517e.chunk.css",
+    "main.js": "/Justine-Gallery/static/js/main.6ff85275.chunk.js",
+    "main.js.map": "/Justine-Gallery/static/js/main.6ff85275.chunk.js.map",
     "runtime-main.js": "/Justine-Gallery/static/js/runtime-main.8285d542.js",
     "runtime-main.js.map": "/Justine-Gallery/static/js/runtime-main.8285d542.js.map",
-    "static/js/2.079a2962.chunk.js": "/Justine-Gallery/static/js/2.079a2962.chunk.js",
-    "static/js/2.079a2962.chunk.js.map": "/Justine-Gallery/static/js/2.079a2962.chunk.js.map",
+    "static/js/2.0875673d.chunk.js": "/Justine-Gallery/static/js/2.0875673d.chunk.js",
+    "static/js/2.0875673d.chunk.js.map": "/Justine-Gallery/static/js/2.0875673d.chunk.js.map",
     "index.html": "/Justine-Gallery/index.html",
-    "precache-manifest.29abc44723aede1656b7b685e77332ed.js": "/Justine-Gallery/precache-manifest.29abc44723aede1656b7b685e77332ed.js",
+    "precache-manifest.6329a13f84c0b5fe1dcd6eba2f1cb285.js": "/Justine-Gallery/precache-manifest.6329a13f84c0b5fe1dcd6eba2f1cb285.js",
     "service-worker.js": "/Justine-Gallery/service-worker.js",
-    "static/css/main.5cce96bc.chunk.css.map": "/Justine-Gallery/static/css/main.5cce96bc.chunk.css.map",
-    "static/js/2.079a2962.chunk.js.LICENSE.txt": "/Justine-Gallery/static/js/2.079a2962.chunk.js.LICENSE.txt",
+    "static/css/main.91cf517e.chunk.css.map": "/Justine-Gallery/static/css/main.91cf517e.chunk.css.map",
+    "static/js/2.0875673d.chunk.js.LICENSE.txt": "/Justine-Gallery/static/js/2.0875673d.chunk.js.LICENSE.txt",
     "static/media/Beta-Julia.jpg": "/Justine-Gallery/static/media/Beta-Julia.5e98a429.jpg",
     "static/media/Bienkowska.jpg": "/Justine-Gallery/static/media/Bienkowska.652fedbd.jpg",
     "static/media/CZERWONY-kAPTUREK1.jpg": "/Justine-Gallery/static/media/CZERWONY-kAPTUREK1.e4926afa.jpg",
@@ -38,6 +38,7 @@
     "static/media/Wędkowanie.jpg": "/Justine-Gallery/static/media/Wędkowanie.7662363f.jpg",
     "static/media/Zajczyk-mgr.jpg": "/Justine-Gallery/static/media/Zajczyk-mgr.b2dc077b.jpg",
     "static/media/barrack.jpg": "/Justine-Gallery/static/media/barrack.c0531163.jpg",
+    "static/media/gmail.ico": "/Justine-Gallery/static/media/gmail.1dae83c0.ico",
     "static/media/ja-iza.jpg": "/Justine-Gallery/static/media/ja-iza.d48f0d85.jpg",
     "static/media/ja.jpg": "/Justine-Gallery/static/media/ja.3ae29dda.jpg",
     "static/media/justys-Konradek.jpg": "/Justine-Gallery/static/media/justys-Konradek.30afcd30.jpg",
@@ -52,6 +53,7 @@
     "static/media/konradek-i-jego-pomysły.jpg": "/Justine-Gallery/static/media/konradek-i-jego-pomysły.d6e67bb4.jpg",
     "static/media/konradek.jpg": "/Justine-Gallery/static/media/konradek.549c8ef7.jpg",
     "static/media/krokodyl.jpg": "/Justine-Gallery/static/media/krokodyl.1fd0b119.jpg",
+    "static/media/linkedin.jpg": "/Justine-Gallery/static/media/linkedin.d407bc08.jpg",
     "static/media/namas.jpg": "/Justine-Gallery/static/media/namas.7e88c86b.jpg",
     "static/media/pidżama.jpg": "/Justine-Gallery/static/media/pidżama.f36bf02d.jpg",
     "static/media/polityka.jpg": "/Justine-Gallery/static/media/polityka.a1e6f4b7.jpg",
@@ -71,8 +73,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8285d542.js",
-    "static/js/2.079a2962.chunk.js",
-    "static/css/main.5cce96bc.chunk.css",
-    "static/js/main.9cbfa491.chunk.js"
+    "static/js/2.0875673d.chunk.js",
+    "static/css/main.91cf517e.chunk.css",
+    "static/js/main.6ff85275.chunk.js"
   ]
 }
