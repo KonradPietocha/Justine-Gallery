@@ -1,4 +1,29 @@
 .contact {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-family: "Comic Sans MS", cursive, sans-serif;
     color: white;
+}
+
+.contact a:link {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.contact a span:first-child {
+    color: red;
+}
+
+.contact a span:nth-child(2) {
+    color: violet;
+}
+
+.contact a span:nth-child(3) {
+    color: blue;
+}
+
+.contact a span:nth-child(3) {
+    color: green;
 }

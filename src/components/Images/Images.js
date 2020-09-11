@@ -7,12 +7,10 @@ function Images(props) {
     const { image, enlargeImageAction } = props;
 
     return (
-        <div>
+        <div className="images">
             <img
                 src={image}
                 alt={image.replace("/Justine-Gallery/static/media/", "").split(".")[0]}
-                width="200px"
-                height="200px"
                 onClick={() => enlargeImageAction("enlarge", image)}
             />
         </div>

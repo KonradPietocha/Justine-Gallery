@@ -72,13 +72,15 @@ function Menu(props) {
                             <Contact />
                             : null}
                     </section>
+                    <EnlargedImage
+                        enlarger={enlarger}
+                        enlargeImageAction={enlargeImageAction}
+                    />
                 </div>
                 : null}
-            <EnlargedImage
-                enlarger={enlarger}
-                enlargeImageAction={enlargeImageAction}
-            />
-            <Footer />
+            {menuOpen ?
+                <Footer />
+                : null}
         </div>
     );
 }
