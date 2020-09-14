@@ -3,10 +3,6 @@
     color: white;
 }
 
-.footer img {
-    height: 25px;
-}
-
-.footer a {
-    padding: 5px 10px;
+.footer a:link {
+    text-decoration: none;
 }
