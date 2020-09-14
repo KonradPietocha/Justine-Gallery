@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f1aca769030c361fde4ad040edc6c994",
+    "revision": "8d799e6f3e539a4377c2a9dca1b5d58c",
     "url": "/Justine-Gallery/index.html"
   },
   {
-    "revision": "eaa2d8c089d5b51662de",
-    "url": "/Justine-Gallery/static/css/main.fd971846.chunk.css"
+    "revision": "c97acd9833f7b02992f9",
+    "url": "/Justine-Gallery/static/css/main.28942682.chunk.css"
   },
   {
-    "revision": "6b862f4f90d3768d01c7",
-    "url": "/Justine-Gallery/static/js/2.0875673d.chunk.js"
+    "revision": "b26c491f90e29df8c33b",
+    "url": "/Justine-Gallery/static/js/2.079a2962.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/Justine-Gallery/static/js/2.0875673d.chunk.js.LICENSE.txt"
+    "url": "/Justine-Gallery/static/js/2.079a2962.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "eaa2d8c089d5b51662de",
-    "url": "/Justine-Gallery/static/js/main.d9cb2c6d.chunk.js"
+    "revision": "c97acd9833f7b02992f9",
+    "url": "/Justine-Gallery/static/js/main.8ce18048.chunk.js"
   },
   {
     "revision": "bf4b0e9f2d18892c8033",
@@ -128,10 +128,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Justine-Gallery/static/media/barrack.c0531163.jpg"
   },
   {
-    "revision": "1dae83c0dfbe268449fc0f3d12c4af6e",
-    "url": "/Justine-Gallery/static/media/gmail.1dae83c0.ico"
-  },
-  {
     "revision": "d48f0d85c9a7db244205d389a633e595",
     "url": "/Justine-Gallery/static/media/ja-iza.d48f0d85.jpg"
   },
@@ -186,10 +182,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1fd0b1192260eba0710a61764a65db73",
     "url": "/Justine-Gallery/static/media/krokodyl.1fd0b119.jpg"
-  },
-  {
-    "revision": "d407bc0816f22602f52d6a0c4c80ad1c",
-    "url": "/Justine-Gallery/static/media/linkedin.d407bc08.jpg"
   },
   {
     "revision": "7e88c86b76cb4541cf53f1c410bcf9da",
