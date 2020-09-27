@@ -50,28 +50,30 @@ function Menu(props) {
                             hazeAction={hazeAction}
                         />
                     </nav>
-                    <section>
-                        {menuSwitch === "Galeria" ?
-                            <Gallery
-                                pictures={pictures}
-                                enlargeImageAction={enlargeImageAction}
-                            />
-                            : null}
-                        {menuSwitch === "Slajdy" ?
-                            <Slider
-                                pictures={pictures}
-                                picturesIndex={indexer}
-                                prevImage={() => changeIndexAction("prev", lastImage)}
-                                nextImage={() => changeIndexAction("next", lastImage)}
-                            />
-                            : null}
-                        {menuSwitch === "O mnie" ?
-                            <AboutMe />
-                            : null}
-                        {menuSwitch === "Kontakt" ?
-                            <Contact />
-                            : null}
-                    </section>
+                    {dehazer ? null :
+                        <section>
+                            {menuSwitch === "Galeria" ?
+                                <Gallery
+                                    pictures={pictures}
+                                    enlargeImageAction={enlargeImageAction}
+                                />
+                                : null}
+                            {menuSwitch === "Slajdy" ?
+                                <Slider
+                                    pictures={pictures}
+                                    picturesIndex={indexer}
+                                    prevImage={() => changeIndexAction("prev", lastImage)}
+                                    nextImage={() => changeIndexAction("next", lastImage)}
+                                />
+                                : null}
+                            {menuSwitch === "O mnie" ?
+                                <AboutMe />
+                                : null}
+                            {menuSwitch === "Kontakt" ?
+                                <Contact />
+                                : null}
+                        </section>
+                    }
                     <EnlargedImage
                         enlarger={enlarger}
                         enlargeImageAction={enlargeImageAction}

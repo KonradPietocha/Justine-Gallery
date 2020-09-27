@@ -6,7 +6,7 @@
 }
 
 .menu-nav {
-    min-height: 20vh;
+    min-height: 10vh;
     display: flex;
     justify-content: center;
     color: white;

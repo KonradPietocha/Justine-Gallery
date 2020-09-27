@@ -17,17 +17,16 @@
 
 .arrows {
     font-family: "Comic Sans MS", cursive, sans-serif;
+    color: black;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    width: 50vw;
-    font-size: 20px;
+    width: 80vw;
+    font-size: 25px;
 }
 
-.arrows div:first-child {
-    color: red;
-}
-
-.arrows div:last-child {
-    color: green;
+@media only screen and (max-width: 360px) {
+    .arrows span {
+        display: none;
+    }
 }

@@ -15,7 +15,7 @@ function Logo(props) {
 
   setTimeout(() => {
     handleClickLogo();
-  }, 5000);
+  }, 3000);
 
   return (
     <>

@@ -15,11 +15,11 @@ function Slider(props) {
             <div className='arrows'>
                 <div
                     onClick={() => prevImage()}
-                >Poprzedni</div>
+                >{"<<"}<span>Poprzedni</span>{"<<"}</div>
 
                 <div
                     onClick={() => nextImage()}
-                >Następny</div>
+                >{">>"}<span>Następny</span>{">>"}</div>
             </div>
             <div className="slide" style={{
                 backgroundImage: `url(${pictures[picturesIndex]})`

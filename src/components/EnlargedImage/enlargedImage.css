@@ -2,23 +2,16 @@
     position: fixed;
     top: 0;
     z-index: 1;
-}
-
-.enlarge-tool {
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    color: red;
-    text-align: right;
-    font-size: 25px;
+    cursor: zoom-out;
 }
 
 .enlarge-image {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
+    background-position-y: center;
     -webkit-filter: drop-shadow( -5px -5px 5px #000 );
     filter: drop-shadow( 20px 20px 5px #000 );
 }
