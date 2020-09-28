@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Justine-Gallery/static/css/main.5fc0edce.chunk.css",
+    "main.css": "/Justine-Gallery/static/css/main.a308c0b1.chunk.css",
     "main.js": "/Justine-Gallery/static/js/main.44417dce.chunk.js",
     "main.js.map": "/Justine-Gallery/static/js/main.44417dce.chunk.js.map",
     "runtime-main.js": "/Justine-Gallery/static/js/runtime-main.8285d542.js",
@@ -8,9 +8,9 @@
     "static/js/2.079a2962.chunk.js": "/Justine-Gallery/static/js/2.079a2962.chunk.js",
     "static/js/2.079a2962.chunk.js.map": "/Justine-Gallery/static/js/2.079a2962.chunk.js.map",
     "index.html": "/Justine-Gallery/index.html",
-    "precache-manifest.fd07dba4f6f57ddd2c1a36e8c5032b4f.js": "/Justine-Gallery/precache-manifest.fd07dba4f6f57ddd2c1a36e8c5032b4f.js",
+    "precache-manifest.a9d67a9be4ccfe062032a4bcd1ae4065.js": "/Justine-Gallery/precache-manifest.a9d67a9be4ccfe062032a4bcd1ae4065.js",
     "service-worker.js": "/Justine-Gallery/service-worker.js",
-    "static/css/main.5fc0edce.chunk.css.map": "/Justine-Gallery/static/css/main.5fc0edce.chunk.css.map",
+    "static/css/main.a308c0b1.chunk.css.map": "/Justine-Gallery/static/css/main.a308c0b1.chunk.css.map",
     "static/js/2.079a2962.chunk.js.LICENSE.txt": "/Justine-Gallery/static/js/2.079a2962.chunk.js.LICENSE.txt",
     "static/media/Beta-Julia.jpg": "/Justine-Gallery/static/media/Beta-Julia.5e98a429.jpg",
     "static/media/Bienkowska.jpg": "/Justine-Gallery/static/media/Bienkowska.652fedbd.jpg",
@@ -72,7 +72,7 @@
   "entrypoints": [
     "static/js/runtime-main.8285d542.js",
     "static/js/2.079a2962.chunk.js",
-    "static/css/main.5fc0edce.chunk.css",
+    "static/css/main.a308c0b1.chunk.css",
     "static/js/main.44417dce.chunk.js"
   ]
 }
