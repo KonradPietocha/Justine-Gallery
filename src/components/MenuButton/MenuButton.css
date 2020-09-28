@@ -103,7 +103,7 @@
 /* BUTTON 2 */
 #button-2 {
   border: 2px solid #34495e;
-  color: blue;
+  color: deepskyblue;
   overflow: hidden;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -148,7 +148,7 @@
 /* BUTTON 3 */
 #button-3 {
   border: 2px solid #34495e;
-  color: green;
+  color: greenyellow;
   overflow: hidden;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;

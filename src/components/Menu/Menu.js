@@ -50,7 +50,7 @@ function Menu(props) {
                             hazeAction={hazeAction}
                         />
                     </nav>
-                    {dehazer ? null :
+                    {//dehazer ? null :
                         <section>
                             {menuSwitch === "Galeria" ?
                                 <Gallery
