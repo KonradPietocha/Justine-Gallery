@@ -1,7 +1,7 @@
 import React from 'react';
 //component
-import Title from '../Title/Title.js';
-import LogoImg from '../LogoImg/LogoImg.js';
+//import Title from '../Title/Title.js';
+//import LogoImg from '../LogoImg/LogoImg.js';
 //style
 import './logo.css';
 
@@ -13,9 +13,9 @@ function Logo(props) {
   let title1 = title[0].split("");
   let title2 = title[1].split("");
 
-  setTimeout(() => {
-    handleClickLogo();
-  }, 3000);
+  // setTimeout(() => {
+  //   handleClickLogo();
+  // }, 3000);
 
   return (
     <>
@@ -23,7 +23,10 @@ function Logo(props) {
         <header className="logo-header"
           onClick={handleClickLogo}
         >
-          <h1 className="title1">
+          <h1>
+            Galeria
+          </h1>
+          {/* <h1 className="title1">
             <Title
               title={title1}
               position={0}
@@ -35,7 +38,7 @@ function Logo(props) {
               position={2}
             />
           </h1>
-          <LogoImg />
+          <LogoImg /> */}
         </header>
       }
     </>

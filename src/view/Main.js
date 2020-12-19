@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from 'react';
 //components
-import Logo from '../components/Logo/Logo';
+//import Logo from '../components/Logo/Logo';
 import Menu from '../components/Menu/Menu';
 //style
 import './main.css';
@@ -14,7 +14,7 @@ function Main(props) {
     menuSwitch,
     mobileSwitch,
     dehazer,
-    openMenuAction,
+    //openMenuAction,
     menuSwitchAction,
     makeMobileAction,
     hazeAction,
@@ -34,10 +34,10 @@ function Main(props) {
 
   return (
     <div className="main">
-      <Logo
+      {/* <Logo
         handleClickLogo={() => openMenuAction("open")}
         menuOpen={menuOpen}
-      />
+      /> */}
       <Menu
         enlarger={enlarger}
         indexer={indexer}

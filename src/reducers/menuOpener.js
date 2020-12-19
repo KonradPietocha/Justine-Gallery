@@ -1,6 +1,6 @@
 const menuOpener = (state, action) => {
     if (state === undefined) {
-        return { menu: false };
+        return { menu: true };
     }
     switch (action.type) {
         case "close":

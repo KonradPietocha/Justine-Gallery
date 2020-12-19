@@ -8,7 +8,7 @@ function Footer() {
     <>
       <footer className="footer">
         <a href="mailto:konrad.pietocha80@gmail.com">
-          Web developer: KoNrAd PiĘtOcHa
+          Made by: KoNrAd PiĘtOcHa
         </a>
       </footer>
     </>
