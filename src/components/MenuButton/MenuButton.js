@@ -1,8 +1,8 @@
 import React from 'react';
 //style
 import './menuButton.css';
-//function
-import { switchMenu } from '../../functions/switchMenu.js';
+//service
+import { switchMenu } from './menuButton.service';
 
 function MenuButton(props) {
     //props***************************************

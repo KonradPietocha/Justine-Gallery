@@ -1,16 +1,10 @@
 import { connect } from 'react-redux';
 import Main from './view/Main';
+import { getState } from './redux/state';
 
 //state
 const mapStateToProps = state => {
-    return {
-        menuOpen: state.menuOpener.menu,
-        menuSwitch: state.menuSwitch.content,
-        mobileSwitch: state.mobileSwitch.mobile,
-        dehazer: state.dehazer.menu,
-        indexer: state.indexer.index,
-        enlarger: state.enlarger.image
-    };
+    return getState(state);
 };
 
 //actions
