@@ -16,17 +16,28 @@
 }
 
 .arrows {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    color: black;
+    color: white;
     display: flex;
     justify-content: space-between;
-    cursor: pointer;
-    width: 80vw;
+    width: 95vw;
     font-size: 25px;
+    position: absolute;
+    top: 30%;
 }
 
-@media only screen and (max-width: 360px) {
-    .arrows span {
-        display: none;
-    }
+.arrow {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    padding: 20px;
+    box-shadow: none;
+    border: 0px solid RGBA(0,0,0,1);
+    border-radius: 99px;
+    position: relative;
+}
+
+.arrow-icon {
+    position: absolute;
+    top: 0;
+    left: 25%;
 }

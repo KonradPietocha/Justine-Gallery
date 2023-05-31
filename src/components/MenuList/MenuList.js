@@ -48,14 +48,7 @@ function MenuList(props) {
                 :
                 <div className="menu-list">
                     {list.map((item, key) => (
-                        <div
-                            key={key}
-                            style={
-                                menuSwitch === item ?
-                                    { paddingTop: "10px" }
-                                    : null
-                            }
-                        >
+                        <div key={key}>
                             <MenuButton
                                 item={item}
                                 menuSwitch={menuSwitch}

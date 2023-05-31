@@ -17,15 +17,15 @@
 }
 
 .dehaze-menu1 {
-    border-top: 4px solid red;
-    border-bottom: 2px solid red;
+    border-top: 4px solid black;
+    border-bottom: 2px solid black;
     width: 40px;
     height: 5px;
 }
 
 .dehaze-menu2 {
-    border-top: 2px solid red;
-    border-bottom: 4px solid red;
+    border-top: 2px solid black;
+    border-bottom: 4px solid black;
     width: 40px;
     height: 5px;
 }
