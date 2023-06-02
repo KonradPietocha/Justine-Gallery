@@ -6,14 +6,14 @@ import { switchMenu } from './menuButton.service';
 
 function MenuButton(props) {
     //props***************************************
-    const { number, item, menuSwitch } = props;
+    const { number, item, menuSwitch, dispatchAction } = props;
 
     return (
         <>
             <div
                 className="button"
                 id={menuSwitch === item ? `selected-${number}` : `button-${number}`}
-                onClick={switchMenu(props)}
+                onClick={() => dispatchAction(switchMenu(item))}
             >
                 {item}
             </div>

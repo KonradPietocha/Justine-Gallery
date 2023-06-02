@@ -18,16 +18,9 @@ function Menu(props) {
         enlarger,
         indexer,
         dehazer,
-        menuOpen,
         menuSwitch,
         mobileSwitch,
-        openGalleryAction,
-        sliderOpenAction,
-        aboutOpenAction,
-        contactOpenAction,
-        hazeAction,
-        changeIndexAction,
-        enlargeImageAction
+        dispatchAction
     } = props;
     //variables***********************************
     const menuArray = ["Galeria", "Slajdy", "O mnie", "Kontakt"];
@@ -35,54 +28,44 @@ function Menu(props) {
 
     return (
         <div className="menu">
-            {menuOpen ?
-                <div onClick={() => dehazer ? hazeAction("haze") : null}>
-                    <nav className="menu-nav">
-                        <MenuList
-                            dehazer={dehazer}
-                            menuSwitch={menuSwitch}
-                            mobileSwitch={mobileSwitch}
-                            list={menuArray}
-                            openGalleryAction={openGalleryAction}
-                            sliderOpenAction={sliderOpenAction}
-                            aboutOpenAction={aboutOpenAction}
-                            contactOpenAction={contactOpenAction}
-                            hazeAction={hazeAction}
-                        />
-                    </nav>
-                    {//dehazer ? null :
-                        <section>
-                            {menuSwitch === "Galeria" ?
-                                <Gallery
-                                    pictures={pictures}
-                                    enlargeImageAction={enlargeImageAction}
-                                />
-                                : null}
-                            {menuSwitch === "Slajdy" ?
-                                <Slider
-                                    pictures={pictures}
-                                    picturesIndex={indexer}
-                                    prevImage={() => changeIndexAction("prev", lastImage)}
-                                    nextImage={() => changeIndexAction("next", lastImage)}
-                                />
-                                : null}
-                            {menuSwitch === "O mnie" ?
-                                <AboutMe />
-                                : null}
-                            {menuSwitch === "Kontakt" ?
-                                <Contact />
-                                : null}
-                        </section>
-                    }
-                    <EnlargedImage
-                        enlarger={enlarger}
-                        enlargeImageAction={enlargeImageAction}
+            <div onClick={() => dehazer ? dispatchAction({type: "haze"}) : null}>
+                <nav className="menu-nav">
+                    <MenuList
+                        dehazer={dehazer}
+                        menuSwitch={menuSwitch}
+                        mobileSwitch={mobileSwitch}
+                        list={menuArray}
+                        dispatchAction={dispatchAction}
                     />
-                </div>
-                : null}
-            {menuOpen ?
-                <Footer />
-                : null}
+                </nav>
+                <section>
+                    {menuSwitch === "Galeria" ?
+                        <Gallery
+                            pictures={pictures}
+                            dispatchAction={dispatchAction}
+                        />
+                        : null}
+                    {menuSwitch === "Slajdy" ?
+                        <Slider
+                            pictures={pictures}
+                            picturesIndex={indexer}
+                            prevImage={() => dispatchAction({type: "prev", last: lastImage})}
+                            nextImage={() => dispatchAction({type: "next", last: lastImage})}
+                        />
+                        : null}
+                    {menuSwitch === "O mnie" ?
+                        <AboutMe />
+                        : null}
+                    {menuSwitch === "Kontakt" ?
+                        <Contact />
+                        : null}
+                </section>
+                <EnlargedImage
+                    enlarger={enlarger}
+                    dispatchAction={dispatchAction}
+                />
+            </div>
+            <Footer />
         </div>
     );
 }

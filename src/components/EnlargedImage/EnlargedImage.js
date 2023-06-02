@@ -6,13 +6,13 @@ function EnlargedImage(props) {
     //props***************************************
     const {
         enlarger,
-        enlargeImageAction
+        dispatchAction
     } = props;
 
     return (
         <>
             {enlarger ?
-                <div className="enlarge" onClick={() => enlargeImageAction("shut")}>
+                <div className="enlarge" onClick={() => dispatchAction({type: "shut"})}>
                     <div className="enlarge-image" style={{
                         backgroundImage: `url(${enlarger})`
                     }} />

@@ -1,6 +1,5 @@
 import React, { useLayoutEffect } from 'react';
 //components
-//import Logo from '../components/Logo/Logo';
 import Menu from '../components/Menu/Menu';
 //style
 import './main.css';
@@ -10,22 +9,16 @@ function Main(props) {
   const {
     enlarger,
     indexer,
-    menuOpen,
     menuSwitch,
     mobileSwitch,
     dehazer,
-    //openMenuAction,
-    menuSwitchAction,
-    makeMobileAction,
-    hazeAction,
-    changeIndexAction,
-    enlargeImageAction
+    dispatchAction
   } = props;
 
   useLayoutEffect(() => {
     function updateSize() {
-      if (window.innerWidth < 750) makeMobileAction("small");
-      if (window.innerWidth > 750) makeMobileAction("wide");
+      if (window.innerWidth < 750) dispatchAction({type: "small"});
+      if (window.innerWidth > 750) dispatchAction({type: "wide"});
     }
     window.addEventListener('resize', updateSize);
     updateSize();
@@ -34,24 +27,13 @@ function Main(props) {
 
   return (
     <div className="main">
-      {/* <Logo
-        handleClickLogo={() => openMenuAction("open")}
-        menuOpen={menuOpen}
-      /> */}
       <Menu
         enlarger={enlarger}
         indexer={indexer}
         dehazer={dehazer}
-        menuOpen={menuOpen}
         menuSwitch={menuSwitch}
         mobileSwitch={mobileSwitch}
-        openGalleryAction={() => menuSwitchAction("galleryOpen")}
-        sliderOpenAction={() => menuSwitchAction("sliderOpen")}
-        aboutOpenAction={() => menuSwitchAction("aboutOpen")}
-        contactOpenAction={() => menuSwitchAction("contactOpen")}
-        hazeAction={hazeAction}
-        changeIndexAction={changeIndexAction}
-        enlargeImageAction={enlargeImageAction}
+        dispatchAction={dispatchAction}
       />
     </div>
   );

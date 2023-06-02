@@ -11,11 +11,7 @@ function MenuList(props) {
         list,
         menuSwitch,
         mobileSwitch,
-        openGalleryAction,
-        sliderOpenAction,
-        aboutOpenAction,
-        contactOpenAction,
-        hazeAction
+        dispatchAction
     } = props;
 
     return (
@@ -23,7 +19,7 @@ function MenuList(props) {
             {mobileSwitch ?
                 <div className='mobile-menu'>
                     {!dehazer ?
-                        <div onClick={() => hazeAction("dehaze")}>
+                        <div onClick={() => dispatchAction({type: "dehaze"})}>
                             <div className='dehaze-menu1' />
                             <div className='dehaze-menu2' />
                         </div>
@@ -35,10 +31,7 @@ function MenuList(props) {
                                         item={item}
                                         menuSwitch={menuSwitch}
                                         number={key}
-                                        openGalleryAction={openGalleryAction}
-                                        sliderOpenAction={sliderOpenAction}
-                                        aboutOpenAction={aboutOpenAction}
-                                        contactOpenAction={contactOpenAction}
+                                        dispatchAction={(actionType) => dispatchAction({type: actionType})}
                                     />
                                 </div>
                             ))}
@@ -53,10 +46,7 @@ function MenuList(props) {
                                 item={item}
                                 menuSwitch={menuSwitch}
                                 number={key}
-                                openGalleryAction={openGalleryAction}
-                                sliderOpenAction={sliderOpenAction}
-                                aboutOpenAction={aboutOpenAction}
-                                contactOpenAction={contactOpenAction}
+                                dispatchAction={(actionType) => dispatchAction({type: actionType})}
                             />
                         </div>
                     ))}

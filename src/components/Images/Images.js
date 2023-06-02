@@ -4,14 +4,14 @@ import './images.css';
 
 function Images(props) {
     //props***************************************
-    const { image, enlargeImageAction } = props;
+    const { image, dispatchAction } = props;
 
     return (
         <div className="images">
             <img
                 src={image}
                 alt={image.replace("/Justine-Gallery/static/media/", "").split(".")[0]}
-                onClick={() => enlargeImageAction("enlarge", image)}
+                onClick={() => dispatchAction({type: "enlarge", url: image})}
             />
         </div>
     )

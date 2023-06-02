@@ -1,14 +1,14 @@
-export const switchMenu = props => {
-    switch (props.item) {
+export const switchMenu = item => {
+    switch (item) {
         case "Galeria":
-            return props.openGalleryAction;
+            return "galleryOpen";
         case "Slajdy":
-            return props.sliderOpenAction;
+            return "sliderOpen";
         case "O mnie":
-            return props.aboutOpenAction;
+            return "aboutOpen";
         case "Kontakt":
-            return props.contactOpenAction;
+            return "contactOpen";
         default:
-            return props.openGalleryAction;
+            return "galleryOpen";
     };
 };

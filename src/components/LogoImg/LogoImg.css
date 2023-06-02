@@ -1,9 +1,0 @@
-.logo-img {
-  position: absolute;
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  min-height: 50vh;
-  min-width: 50vw;
-  background: center/cover no-repeat url("../../images/zajczuś.jpg");
-}

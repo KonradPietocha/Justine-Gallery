@@ -6,7 +6,7 @@ import './gallery.css';
 
 function Gallery(props) {
     //props***************************************
-    const { pictures, enlargeImageAction } = props;
+    const { pictures, dispatchAction } = props;
 
     return (
         <div
@@ -16,7 +16,7 @@ function Gallery(props) {
                 <Images
                     key={i}
                     image={image}
-                    enlargeImageAction={enlargeImageAction}
+                    dispatchAction={dispatchAction}
                 />
             ))}
         </div>
