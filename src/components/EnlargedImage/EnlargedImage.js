@@ -5,16 +5,16 @@ import './enlargedImage.css';
 function EnlargedImage(props) {
     //props***************************************
     const {
-        enlarger,
+        enlargedPicture,
         dispatchAction
     } = props;
 
     return (
         <>
-            {enlarger ?
+            {enlargedPicture ?
                 <div className="enlarge" onClick={() => dispatchAction({type: "shut"})}>
                     <div className="enlarge-image" style={{
-                        backgroundImage: `url(${enlarger})`
+                        backgroundImage: `url(${enlargedPicture})`
                     }} />
                 </div>
                 : null}

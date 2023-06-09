@@ -7,18 +7,16 @@ import './menuList.css';
 function MenuList(props) {
     //props***************************************
     const {
-        dehazer,
         list,
-        menuSwitch,
-        mobileSwitch,
+        globalState,
         dispatchAction
     } = props;
 
     return (
         <>
-            {mobileSwitch ?
+            {globalState.isMobileModeOpen ?
                 <div className='mobile-menu'>
-                    {!dehazer ?
+                    {!globalState.isMobileMenuOpen ?
                         <div onClick={() => dispatchAction({type: "dehaze"})}>
                             <div className='dehaze-menu1' />
                             <div className='dehaze-menu2' />
@@ -29,7 +27,7 @@ function MenuList(props) {
                                 <div key={key}>
                                     <MenuButton
                                         item={item}
-                                        menuSwitch={menuSwitch}
+                                        globalState={globalState}
                                         number={key}
                                         dispatchAction={(actionType) => dispatchAction({type: actionType})}
                                     />
@@ -44,7 +42,7 @@ function MenuList(props) {
                         <div key={key}>
                             <MenuButton
                                 item={item}
-                                menuSwitch={menuSwitch}
+                                globalState={globalState}
                                 number={key}
                                 dispatchAction={(actionType) => dispatchAction({type: actionType})}
                             />

@@ -7,11 +7,7 @@ import './main.css';
 function Main(props) {
   //props***************************************
   const {
-    enlarger,
-    indexer,
-    menuSwitch,
-    mobileSwitch,
-    dehazer,
+    globalState,
     dispatchAction
   } = props;
 
@@ -26,13 +22,10 @@ function Main(props) {
   });
 
   return (
-    <div className="main">
+    <div className="main"
+         onClick={() => globalState.isMobileMenuOpen ? dispatchAction({type: "haze"}) : null}>
       <Menu
-        enlarger={enlarger}
-        indexer={indexer}
-        dehazer={dehazer}
-        menuSwitch={menuSwitch}
-        mobileSwitch={mobileSwitch}
+        globalState={globalState}
         dispatchAction={dispatchAction}
       />
     </div>

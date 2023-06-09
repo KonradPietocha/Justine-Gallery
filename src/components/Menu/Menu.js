@@ -11,15 +11,12 @@ import Footer from '../Footer/Footer';
 import { pictures } from '../../url/picturesUrl';
 //style
 import './menu.css';
+import { MENU_SECTION_NAMES } from '../../redux/constant.js';
 
 function Menu(props) {
     //props***************************************
     const {
-        enlarger,
-        indexer,
-        dehazer,
-        menuSwitch,
-        mobileSwitch,
+        globalState,
         dispatchAction
     } = props;
     //variables***********************************
@@ -28,43 +25,39 @@ function Menu(props) {
 
     return (
         <div className="menu">
-            <div onClick={() => dehazer ? dispatchAction({type: "haze"}) : null}>
-                <nav className="menu-nav">
-                    <MenuList
-                        dehazer={dehazer}
-                        menuSwitch={menuSwitch}
-                        mobileSwitch={mobileSwitch}
-                        list={menuArray}
-                        dispatchAction={dispatchAction}
-                    />
-                </nav>
-                <section>
-                    {menuSwitch === "Galeria" ?
-                        <Gallery
-                            pictures={pictures}
-                            dispatchAction={dispatchAction}
-                        />
-                        : null}
-                    {menuSwitch === "Slajdy" ?
-                        <Slider
-                            pictures={pictures}
-                            picturesIndex={indexer}
-                            prevImage={() => dispatchAction({type: "prev", last: lastImage})}
-                            nextImage={() => dispatchAction({type: "next", last: lastImage})}
-                        />
-                        : null}
-                    {menuSwitch === "O mnie" ?
-                        <AboutMe />
-                        : null}
-                    {menuSwitch === "Kontakt" ?
-                        <Contact />
-                        : null}
-                </section>
-                <EnlargedImage
-                    enlarger={enlarger}
+            <nav className="menu-nav">
+                <MenuList
+                    globalState={globalState}
+                    list={menuArray}
                     dispatchAction={dispatchAction}
                 />
-            </div>
+            </nav>
+            <section>
+                {globalState.menuSection === MENU_SECTION_NAMES.GALLERY.NAME ?
+                    <Gallery
+                        pictures={pictures}
+                        dispatchAction={dispatchAction}
+                    />
+                    : null}
+                {globalState.menuSection === MENU_SECTION_NAMES.SLIDES.NAME ?
+                    <Slider
+                        pictures={pictures}
+                        pictureIndex={globalState.pictureIndex}
+                        prevImage={() => dispatchAction({type: "prev", last: lastImage})}
+                        nextImage={() => dispatchAction({type: "next", last: lastImage})}
+                    />
+                    : null}
+                {globalState.menuSection === MENU_SECTION_NAMES.ABOUT_AUTHOR.NAME ?
+                    <AboutMe />
+                    : null}
+                {globalState.menuSection === MENU_SECTION_NAMES.CONTACT.NAME ?
+                    <Contact />
+                    : null}
+            </section>
+            <EnlargedImage
+                enlargedPicture={globalState.enlargedPicture}
+                dispatchAction={dispatchAction}
+            />
             <Footer />
         </div>
     );

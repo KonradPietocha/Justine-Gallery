@@ -5,7 +5,7 @@ function Slider(props) {
     //props***************************************
     const {
         pictures,
-        picturesIndex,
+        pictureIndex,
         prevImage,
         nextImage
     } = props;
@@ -23,7 +23,7 @@ function Slider(props) {
                 </div>
             </div>
             <div className="slide" style={{
-                backgroundImage: `url(${pictures[picturesIndex]})`
+                backgroundImage: `url(${pictures[pictureIndex]})`
             }} />
         </div>
     );
