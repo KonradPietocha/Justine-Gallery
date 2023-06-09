@@ -1,4 +1,5 @@
 import React, { useLayoutEffect } from 'react';
+import { MOBILE_MENU, MOBILE_MODE } from '../redux/constant';
 //components
 import Menu from '../components/Menu/Menu';
 //style
@@ -13,8 +14,8 @@ function Main(props) {
 
   useLayoutEffect(() => {
     function updateSize() {
-      if (window.innerWidth < 750) dispatchAction({type: "small"});
-      if (window.innerWidth > 750) dispatchAction({type: "wide"});
+      if (window.innerWidth < 750) dispatchAction({type: MOBILE_MODE.OPEN});
+      if (window.innerWidth > 750) dispatchAction({type: MOBILE_MODE.CLOSE});
     }
     window.addEventListener('resize', updateSize);
     updateSize();
@@ -23,7 +24,7 @@ function Main(props) {
 
   return (
     <div className="main"
-         onClick={() => globalState.isMobileMenuOpen ? dispatchAction({type: "haze"}) : null}>
+         onClick={() => globalState.isMobileMenuOpen ? dispatchAction({type: MOBILE_MENU.CLOSE}) : null}>
       <Menu
         globalState={globalState}
         dispatchAction={dispatchAction}

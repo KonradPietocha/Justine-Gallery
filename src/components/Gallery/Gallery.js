@@ -6,7 +6,7 @@ import './gallery.css';
 
 function Gallery(props) {
     //props***************************************
-    const { pictures, dispatchAction } = props;
+    const { pictures, openImage } = props;
 
     return (
         <div
@@ -16,7 +16,7 @@ function Gallery(props) {
                 <Images
                     key={i}
                     image={image}
-                    dispatchAction={dispatchAction}
+                    openImage={() => openImage(image)}
                 />
             ))}
         </div>

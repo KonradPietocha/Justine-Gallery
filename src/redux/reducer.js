@@ -1,43 +1,15 @@
 import { combineReducers } from 'redux';
-import { MENU_SECTION_NAMES } from './constant';
+import { MENU_SECTION_NAMES, MOBILE_MENU, MOBILE_MODE } from './constant';
 
 const isMobileMenuOpen = (state, action) => {
     if (state === undefined) {
         return false;
     }
     switch (action.type) {
-        case "haze":
+        case MOBILE_MENU.CLOSE:
             return false;
-        case "dehaze":
+        case MOBILE_MENU.OPEN:
             return true;
-        default:
-            return state;
-    }
-};
-
-const enlargedPicture = (state, action) => {
-    if (state === undefined) {
-        return null;
-    };
-    switch (action.type) {
-        case "enlarge":
-            return action.url;
-        case "shut":
-            return null;
-        default:
-            return state;
-    }
-};
-
-const pictureIndex = (state, action) => {
-    if (state === undefined) {
-        return 0;
-    };
-    switch (action.type) {
-        case "prev":
-            return state === 0 ? action.last : state - 1;
-        case "next":
-            return state === action.last ? 0 : state + 1;
         default:
             return state;
     }
@@ -66,9 +38,9 @@ const isMobileModeOpen = (state, action) => {
         return true;
     }
     switch (action.type) {
-        case "wide":
+        case MOBILE_MODE.CLOSE:
             return false;
-        case "small":
+        case MOBILE_MODE.OPEN:
             return true;
         default:
             return state;
@@ -78,7 +50,5 @@ const isMobileModeOpen = (state, action) => {
 export default combineReducers({
     menuSection,
     isMobileModeOpen,
-    isMobileMenuOpen,
-    pictureIndex,
-    enlargedPicture
+    isMobileMenuOpen
 });

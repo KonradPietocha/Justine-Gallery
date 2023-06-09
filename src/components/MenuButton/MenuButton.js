@@ -6,16 +6,15 @@ import { switchMenu } from './menuButton.service';
 
 function MenuButton(props) {
     //props***************************************
-    const { number, item, globalState, dispatchAction } = props;
+    const { buttonName, globalState, dispatchAction } = props;
 
     return (
         <>
             <div
-                className="button"
-                id={globalState.menuSection === item ? `selected-${number}` : `button-${number}`}
-                onClick={() => dispatchAction(switchMenu(item))}
+                className={`button ${globalState.menuSection === buttonName ? "button--selected" : "button--unselected"}`}
+                onClick={() => dispatchAction(switchMenu(buttonName))}
             >
-                {item}
+                {buttonName}
             </div>
         </>
     );

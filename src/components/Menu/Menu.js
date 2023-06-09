@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { MENU_SECTION_NAMES } from '../../redux/constant.js';
 //component
 import MenuList from '../MenuList/MenuList.js';
 import Gallery from '../Gallery/Gallery.js';
@@ -11,7 +12,6 @@ import Footer from '../Footer/Footer';
 import { pictures } from '../../url/picturesUrl';
 //style
 import './menu.css';
-import { MENU_SECTION_NAMES } from '../../redux/constant.js';
 
 function Menu(props) {
     //props***************************************
@@ -19,16 +19,14 @@ function Menu(props) {
         globalState,
         dispatchAction
     } = props;
-    //variables***********************************
-    const menuArray = ["Galeria", "Slajdy", "O mnie", "Kontakt"];
-    const lastImage = pictures.length - 1;
+
+    const [enlargedPicture, setEnlargedPicture] = useState(null);
 
     return (
         <div className="menu">
             <nav className="menu-nav">
                 <MenuList
                     globalState={globalState}
-                    list={menuArray}
                     dispatchAction={dispatchAction}
                 />
             </nav>
@@ -36,15 +34,12 @@ function Menu(props) {
                 {globalState.menuSection === MENU_SECTION_NAMES.GALLERY.NAME ?
                     <Gallery
                         pictures={pictures}
-                        dispatchAction={dispatchAction}
+                        openImage={(image) => setEnlargedPicture(image)}
                     />
                     : null}
                 {globalState.menuSection === MENU_SECTION_NAMES.SLIDES.NAME ?
                     <Slider
                         pictures={pictures}
-                        pictureIndex={globalState.pictureIndex}
-                        prevImage={() => dispatchAction({type: "prev", last: lastImage})}
-                        nextImage={() => dispatchAction({type: "next", last: lastImage})}
                     />
                     : null}
                 {globalState.menuSection === MENU_SECTION_NAMES.ABOUT_AUTHOR.NAME ?
@@ -55,8 +50,8 @@ function Menu(props) {
                     : null}
             </section>
             <EnlargedImage
-                enlargedPicture={globalState.enlargedPicture}
-                dispatchAction={dispatchAction}
+                enlargedPicture={enlargedPicture}
+                closeImage={() => setEnlargedPicture(null)}
             />
             <Footer />
         </div>

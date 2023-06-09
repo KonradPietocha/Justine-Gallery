@@ -30,8 +30,7 @@
     background: rgba(0, 0, 0, 0.6);
     opacity: 1;
     padding: 20px;
-    box-shadow: none;
-    border: 0px solid RGBA(0,0,0,1);
+    border: 0px solid rgba(0,0,0,1);
     border-radius: 99px;
     position: relative;
 }
