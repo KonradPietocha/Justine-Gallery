@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Justine-Gallery/static/css/main.b7df97f7.css",
-    "main.js": "/Justine-Gallery/static/js/main.54275382.js",
+    "main.css": "/Justine-Gallery/static/css/main.624251c1.css",
+    "main.js": "/Justine-Gallery/static/js/main.53ccd6ad.js",
     "static/js/787.b1b93d4e.chunk.js": "/Justine-Gallery/static/js/787.b1b93d4e.chunk.js",
     "static/media/Król3.jpg": "/Justine-Gallery/static/media/Król3.636e3c17f9425c691b15.jpg",
     "static/media/Król2.jpg": "/Justine-Gallery/static/media/Król2.55a3d4b66899968a950e.jpg",
@@ -60,12 +60,12 @@
     "static/media/praca1.jpg": "/Justine-Gallery/static/media/praca1.cab02ae53edc93098acc.jpg",
     "static/media/kondi-Justys.jpg": "/Justine-Gallery/static/media/kondi-Justys.577849e50fc8095fd548.jpg",
     "index.html": "/Justine-Gallery/index.html",
-    "main.b7df97f7.css.map": "/Justine-Gallery/static/css/main.b7df97f7.css.map",
-    "main.54275382.js.map": "/Justine-Gallery/static/js/main.54275382.js.map",
+    "main.624251c1.css.map": "/Justine-Gallery/static/css/main.624251c1.css.map",
+    "main.53ccd6ad.js.map": "/Justine-Gallery/static/js/main.53ccd6ad.js.map",
     "787.b1b93d4e.chunk.js.map": "/Justine-Gallery/static/js/787.b1b93d4e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7df97f7.css",
-    "static/js/main.54275382.js"
+    "static/css/main.624251c1.css",
+    "static/js/main.53ccd6ad.js"
   ]
 }
