@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import Main from './view/Main';
 import { getState } from './redux/state';
+import Main from './components/Main/Main';
 
 //state
 const mapStateToProps = state => {

@@ -1,5 +1,4 @@
 .button {
-  font-family: "Comic Sans MS", cursive, sans-serif;
   display: inline-block;
   padding: 20px 50px;
   margin: 20px 10px;
@@ -8,10 +7,12 @@
   border-radius: 25px;
   cursor: pointer;
   border: 2px solid #363a3e;
+  font-size: 16px;
 }
 
 .button--unselected {
-  color: black;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
   overflow: hidden;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -27,7 +28,7 @@
   z-index: -1;
   top: -50%;
   left: 0;
-  background-color: black;
+  background-color: var(--primary-color);
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -38,7 +39,7 @@
 }
 
 .button--unselected:hover {
-  color: #ecf0f1;
+  color: var(--secondary-color);
 }
 
 .button--unselected:hover:before {
@@ -50,6 +51,6 @@
 }
 
 .button--selected {
-  background-color: black;
-  color: #ecf0f1;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }

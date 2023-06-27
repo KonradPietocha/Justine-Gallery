@@ -16,7 +16,7 @@
 }
 
 .arrows {
-    color: white;
+    color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     width: 95vw;

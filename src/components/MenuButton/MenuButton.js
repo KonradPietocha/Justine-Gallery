@@ -10,12 +10,13 @@ function MenuButton(props) {
 
     return (
         <>
-            <div
+            <button
+                type="button"
                 className={`button ${globalState.menuSection === buttonName ? "button--selected" : "button--unselected"}`}
                 onClick={() => dispatchAction(switchMenu(buttonName))}
             >
                 {buttonName}
-            </div>
+            </button>
         </>
     );
 }
