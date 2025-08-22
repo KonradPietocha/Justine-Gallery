@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect } from "react";
+import { useState, useEffect } from "react";
 import { MENU_SECTION_NAMES } from "../../redux/constant.js";
 import MenuList from "../MenuList/MenuList";
 import Gallery from "../Gallery/Gallery";
@@ -24,15 +24,16 @@ function MainCard() {
   const menuSection = useSelector(getMenuSection);
   const isMobileMenuOpen = useSelector(getIsMobileMenu);
   const dispatch = useDispatch();
-  useLayoutEffect(() => {
+
+  useEffect(() => {
     function updateSize() {
       if (window.innerWidth < 750) dispatch(setIsMobileMode(true));
       if (window.innerWidth > 750) dispatch(setIsMobileMode(false));
     }
     window.addEventListener("resize", updateSize);
-    updateSize();
     return () => window.removeEventListener("resize", updateSize);
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <main
