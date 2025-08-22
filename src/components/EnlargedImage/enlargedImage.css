@@ -1,17 +1,17 @@
 .enlarge {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    cursor: zoom-out;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  cursor: zoom-out;
 }
 
 .enlarge-image {
-    width: 100vw;
-    height: 100vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-    -webkit-filter: drop-shadow( -5px -5px 5px #000 );
-    filter: drop-shadow( 20px 20px 5px #000 );
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  -webkit-filter: drop-shadow(-5px -5px 5px #000);
+  filter: drop-shadow(20px 20px 5px #000);
 }

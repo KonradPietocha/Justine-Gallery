@@ -1,42 +1,42 @@
 .slider {
-    width: 100%;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide {
-    width: 100%;
-    height: 70vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
+  width: 100%;
+  height: 70vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 .arrows {
-    color: var(--secondary-color);
-    display: flex;
-    justify-content: space-between;
-    width: 95vw;
-    font-size: 25px;
-    position: absolute;
-    top: 30%;
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  width: 95vw;
+  font-size: 25px;
+  position: absolute;
+  top: 30%;
 }
 
 .arrow {
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.6);
-    opacity: 1;
-    padding: 20px;
-    border: 0px solid rgba(0,0,0,1);
-    border-radius: 99px;
-    position: relative;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  padding: 20px;
+  border: 0px solid rgba(0, 0, 0, 1);
+  border-radius: 99px;
+  position: relative;
 }
 
 .arrow-icon {
-    position: absolute;
-    top: 0;
-    left: 25%;
+  position: absolute;
+  top: 0;
+  left: 25%;
 }

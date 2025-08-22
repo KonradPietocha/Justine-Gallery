@@ -1,11 +1,11 @@
 .contact {
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contact a:link {
-    text-decoration: none;
-    font-size: 20px;
+  text-decoration: none;
+  font-size: 20px;
 }

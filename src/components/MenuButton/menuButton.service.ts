@@ -1,6 +1,6 @@
 import { MENU_SECTION_NAMES } from "../../redux/constant";
 
-export const switchMenu = item => {
+export const switchMenu = (item: string) => {
     switch (item) {
         case MENU_SECTION_NAMES.GALLERY.NAME:
             return MENU_SECTION_NAMES.GALLERY.ACTION;

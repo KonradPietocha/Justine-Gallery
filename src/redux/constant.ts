@@ -16,13 +16,3 @@ export const MENU_SECTION_NAMES = {
         ACTION: "contactOpen"
     }
 };
-
-export const MOBILE_MENU = {
-    OPEN: "mobileMenuOpen",
-    CLOSE: "mobileMenuClose"
-};
-
-export const MOBILE_MODE = {
-    OPEN: "mobileModeOpen",
-    CLOSE: "mobileModeClose"
-};
