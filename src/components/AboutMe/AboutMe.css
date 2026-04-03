@@ -1,7 +1,14 @@
 .about-me {
   width: 80vw;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: left;
+  line-height: 1.6;
 }
 
 .about-me p {
-  font-size: 18px;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
 }

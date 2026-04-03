@@ -1,30 +1,96 @@
 .main-container {
   text-align: center;
-  padding-top: 20vh;
+  padding-top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   min-height: 100vh;
+  background: radial-gradient(circle at top, #f6f7fb 0%, #eef1f8 45%, #d8deea 100%);
+  color: var(--primary-color);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-.menu-nav {
-  position: fixed;
-  top: 0;
-  min-height: 10vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+body[data-theme="dark"] .main-container {
+  background: radial-gradient(circle at top, #2a2a4e 0%, #1a1a2e 45%, #0f0f23 100%);
+}
+
+.hero-header {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, rgba(55, 72, 126, 0.12), rgba(255, 255, 255, 0.3));
+  border-bottom: 1px solid rgba(99, 116, 160, 0.22);
+  transition: background 0.3s ease;
+}
+
+body[data-theme="dark"] .hero-header {
+  background: linear-gradient(135deg, rgba(138, 43, 226, 0.12), rgba(26, 26, 46, 0.3));
+  border-bottom: 1px solid rgba(138, 43, 226, 0.22);
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.hero-nav {
+  margin-top: 3rem;
+}
+
+.hero-subtitle {
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #304573;
+  margin-bottom: 0.6rem;
+  transition: color 0.3s ease;
+}
+
+body[data-theme="dark"] .hero-subtitle {
+  color: #8b5cf6;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1.1;
+  color: #102142;
+  letter-spacing: 0.021em;
+  text-transform: capitalize;
+  background: linear-gradient(45deg, #5e84ff, #a855f7, #ec4899, #f59e0b);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 4s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.hero-description {
+  margin: 0.8rem auto 0;
+  font-size: 1.05rem;
+  color: #3a4f7f;
+  max-width: 680px;
+  transition: color 0.3s ease;
+}
+
+body[data-theme="dark"] .hero-description {
+  color: #cbd5e1;
 }
 
 section {
   display: flex;
   justify-content: center;
+  flex: 1;
+  padding: 4rem 1rem 3.5rem;
 }
 
-@media only screen and (max-width: 750px) {
-  .main-container {
-    padding-top: 15vh;
-  }
+section {
+  display: flex;
+  justify-content: center;
 }

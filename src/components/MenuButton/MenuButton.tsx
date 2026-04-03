@@ -8,7 +8,6 @@ function MenuButton({ buttonName }: { buttonName: string }) {
   const dispatch = useDispatch();
 
   return (
-    <>
       <button
         type="button"
         className={`button ${
@@ -18,7 +17,6 @@ function MenuButton({ buttonName }: { buttonName: string }) {
       >
         {buttonName}
       </button>
-    </>
   );
 }
 

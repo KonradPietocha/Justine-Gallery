@@ -7,8 +7,8 @@ export const isMobileMode = createSlice({
   name: 'isMobileModeState',
   initialState,
   reducers: {
-    setIsMobileMode: (state, action: PayloadAction<boolean>) => {
-      return (state = action?.payload ?? false);
+    setIsMobileMode: (_state, action: PayloadAction<boolean>) => {
+      return action?.payload ?? false;
     },
   },
 });

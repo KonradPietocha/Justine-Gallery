@@ -1,8 +1,20 @@
 .enlarge {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 1000;
   cursor: zoom-out;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .enlarge-image {
@@ -10,8 +22,8 @@
   height: 100vh;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-  -webkit-filter: drop-shadow(-5px -5px 5px #000);
-  filter: drop-shadow(20px 20px 5px #000);
+  background-position: center;
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+  max-width: 90vw;
+  max-height: 90vh;
 }

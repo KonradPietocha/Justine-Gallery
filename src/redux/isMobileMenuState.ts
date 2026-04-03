@@ -7,8 +7,8 @@ export const isMobileMenu = createSlice({
   name: 'isMobileMenuState',
   initialState,
   reducers: {
-    setIsMobileMenu: (state, action: PayloadAction<boolean>) => {
-      return (state = action?.payload ?? false);
+    setIsMobileMenu: (_state, action: PayloadAction<boolean>) => {
+      return action?.payload ?? false;
     },
   },
 });

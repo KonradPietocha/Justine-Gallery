@@ -1,15 +1,41 @@
 body {
-  /* variables */
-  --primary-color: black;
-  --secondary-color: white;
+  --primary-color: #102142;
+  --secondary-color: #f4f7ff;
+  --accent-color: #5e84ff;
+  --bg-color: #ecf1fb;
 
-  background-color: rgba(255, 255, 255, 0);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f6f8ff 0%, #e9eef7 100%);
+  font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  color: var(--primary-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body[data-theme="dark"] {
+  --primary-color: #f4f7ff;
+  --secondary-color: #102142;
+  --accent-color: #8b5cf6;
+  --bg-color: #1a1a2e;
+
+  background: linear-gradient(180deg, #0f0f23 0%, #1a1a2e 100%);
+  color: var(--primary-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 code {

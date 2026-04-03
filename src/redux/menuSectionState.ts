@@ -8,8 +8,6 @@ const getMenuSectionName = (payload: string) => {
   switch (payload) {
     case MENU_SECTION_NAMES.GALLERY.ACTION:
       return MENU_SECTION_NAMES.GALLERY.NAME;
-    case MENU_SECTION_NAMES.SLIDES.ACTION:
-      return MENU_SECTION_NAMES.SLIDES.NAME;
     case MENU_SECTION_NAMES.ABOUT_AUTHOR.ACTION:
       return MENU_SECTION_NAMES.ABOUT_AUTHOR.NAME;
     case MENU_SECTION_NAMES.CONTACT.ACTION:
@@ -23,8 +21,8 @@ export const menuSection = createSlice({
   name: 'menuSectionState',
   initialState,
   reducers: {
-    setMenuSection: (state, action: PayloadAction<string>) => {
-      return (state = getMenuSectionName(action?.payload));
+    setMenuSection: (_state, action: PayloadAction<string>) => {
+      return getMenuSectionName(action?.payload);
     },
   },
 });

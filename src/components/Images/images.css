@@ -1,5 +1,5 @@
 .images img {
   cursor: zoom-in;
-  width: 200px;
-  height: 200px;
+  max-width: 80%;
+  max-height: 80%;
 }

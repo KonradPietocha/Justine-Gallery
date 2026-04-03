@@ -3,10 +3,6 @@ export const MENU_SECTION_NAMES = {
         NAME: "Galeria",
         ACTION: "galleryOpen"
     },
-    SLIDES: {
-        NAME: "Slajdy",
-        ACTION: "sliderOpen"
-    },
     ABOUT_AUTHOR: {
         NAME: "O mnie",
         ACTION: "abouAuthortOpen"

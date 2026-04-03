@@ -2,12 +2,14 @@ import { configureStore } from '@reduxjs/toolkit';
 import isMobileModeStateReducer from './isMobileModeState';
 import menuSectionStateReducer from './menuSectionState';
 import isMobileMenuStateReducer from './isMobileMenuState';
+import themeReducer from './themeState';
 
 export const store = configureStore({
   reducer: {
     isMobileModeState: isMobileModeStateReducer,
     isMobileMenuState: isMobileMenuStateReducer,
-    menuSectionState: menuSectionStateReducer
+    menuSectionState: menuSectionStateReducer,
+    theme: themeReducer
   },
 });
 
